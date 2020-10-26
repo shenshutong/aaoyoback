@@ -10,4 +10,9 @@ class AoyobackApplicationTests {
     void contextLoads() {
     }
 
+    @Test
+    public static void main(String[] age){
+        System.out.println("111");
+    }
+
 }
