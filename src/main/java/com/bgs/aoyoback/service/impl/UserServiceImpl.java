@@ -1,6 +1,6 @@
 package com.bgs.aoyoback.service.impl;
 
-import com.bgs.aoyoback.mapper.UserMapper;
+import com.bgs.aoyoback.dao.UserMapper;
 import com.bgs.aoyoback.pojo.AoyoUser;
 import com.bgs.aoyoback.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

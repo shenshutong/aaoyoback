@@ -1,4 +1,4 @@
-package com.bgs.aoyoback.mapper;
+package com.bgs.aoyoback.dao;
 
 import com.bgs.aoyoback.pojo.AoyoUser;
 import org.apache.ibatis.annotations.Param;
