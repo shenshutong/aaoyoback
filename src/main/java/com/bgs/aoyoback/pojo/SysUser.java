@@ -3,9 +3,9 @@ package com.bgs.aoyoback.pojo;
 
 public class SysUser {
 
-  private long userId;
-  private long groupId;
-  private long roleId;
+  private int userId;
+  private int groupId;
+  private int roleId;
   private String userName;
   private String userPwd;
   private String userAlias;
@@ -14,54 +14,54 @@ public class SysUser {
   private String userQq;
   private String userEmail;
   private String userIdentity;
-  private long userAddressId;
+  private int userAddressId;
   private String userImagePath;
-  private long countyId;
+  private int countyId;
   private String userMac;
   private String userImei;
   private String userToken;
-  private long loginFlag;
+  private int loginFlag;
   private String loginDesc;
   private java.sql.Timestamp userLastLogin;
   private String loginUser;
-  private long userSource;
+  private int userSource;
   private String userCreator;
   private java.sql.Timestamp userCreateTime;
   private java.sql.Timestamp userUpdateTime;
   private String userWxOpenid;
   private String userWxUnionid;
-  private long workStart;
-  private long workEnd;
-  private long childrenAccountId;
-  private long userStatus;
-  private long userFlag;
-  private long userSex;
+  private int workStart;
+  private int workEnd;
+  private int childrenAccountId;
+  private int userStatus;
+  private int userFlag;
+  private int userSex;
   private String userWeixinName;
 
 
-  public long getUserId() {
+  public int getUserId() {
     return userId;
   }
 
-  public void setUserId(long userId) {
+  public void setUserId(int userId) {
     this.userId = userId;
   }
 
 
-  public long getGroupId() {
+  public int getGroupId() {
     return groupId;
   }
 
-  public void setGroupId(long groupId) {
+  public void setGroupId(int groupId) {
     this.groupId = groupId;
   }
 
 
-  public long getRoleId() {
+  public int getRoleId() {
     return roleId;
   }
 
-  public void setRoleId(long roleId) {
+  public void setRoleId(int roleId) {
     this.roleId = roleId;
   }
 
@@ -138,11 +138,11 @@ public class SysUser {
   }
 
 
-  public long getUserAddressId() {
+  public int getUserAddressId() {
     return userAddressId;
   }
 
-  public void setUserAddressId(long userAddressId) {
+  public void setUserAddressId(int userAddressId) {
     this.userAddressId = userAddressId;
   }
 
@@ -156,11 +156,11 @@ public class SysUser {
   }
 
 
-  public long getCountyId() {
+  public int getCountyId() {
     return countyId;
   }
 
-  public void setCountyId(long countyId) {
+  public void setCountyId(int countyId) {
     this.countyId = countyId;
   }
 
@@ -192,11 +192,11 @@ public class SysUser {
   }
 
 
-  public long getLoginFlag() {
+  public int getLoginFlag() {
     return loginFlag;
   }
 
-  public void setLoginFlag(long loginFlag) {
+  public void setLoginFlag(int loginFlag) {
     this.loginFlag = loginFlag;
   }
 
@@ -228,11 +228,11 @@ public class SysUser {
   }
 
 
-  public long getUserSource() {
+  public int getUserSource() {
     return userSource;
   }
 
-  public void setUserSource(long userSource) {
+  public void setUserSource(int userSource) {
     this.userSource = userSource;
   }
 
@@ -282,56 +282,56 @@ public class SysUser {
   }
 
 
-  public long getWorkStart() {
+  public int getWorkStart() {
     return workStart;
   }
 
-  public void setWorkStart(long workStart) {
+  public void setWorkStart(int workStart) {
     this.workStart = workStart;
   }
 
 
-  public long getWorkEnd() {
+  public int getWorkEnd() {
     return workEnd;
   }
 
-  public void setWorkEnd(long workEnd) {
+  public void setWorkEnd(int workEnd) {
     this.workEnd = workEnd;
   }
 
 
-  public long getChildrenAccountId() {
+  public int getChildrenAccountId() {
     return childrenAccountId;
   }
 
-  public void setChildrenAccountId(long childrenAccountId) {
+  public void setChildrenAccountId(int childrenAccountId) {
     this.childrenAccountId = childrenAccountId;
   }
 
 
-  public long getUserStatus() {
+  public int getUserStatus() {
     return userStatus;
   }
 
-  public void setUserStatus(long userStatus) {
+  public void setUserStatus(int userStatus) {
     this.userStatus = userStatus;
   }
 
 
-  public long getUserFlag() {
+  public int getUserFlag() {
     return userFlag;
   }
 
-  public void setUserFlag(long userFlag) {
+  public void setUserFlag(int userFlag) {
     this.userFlag = userFlag;
   }
 
 
-  public long getUserSex() {
+  public int getUserSex() {
     return userSex;
   }
 
-  public void setUserSex(long userSex) {
+  public void setUserSex(int userSex) {
     this.userSex = userSex;
   }
 

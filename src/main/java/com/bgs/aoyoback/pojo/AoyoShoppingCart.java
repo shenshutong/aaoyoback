@@ -9,8 +9,8 @@ public class AoyoShoppingCart {
   private int groupId;
   private int joinShoppingCartCount;
   private double joinShoppingCartPrice;
-  private java.sql.Timestamp joinShoppingCartTime;
-  private java.sql.Timestamp updateTime;
+  private int joinShoppingCartTime;
+  private int updateTime;
   private int enabledStatic;
   private int deleteFlag;
 
@@ -69,20 +69,20 @@ public class AoyoShoppingCart {
   }
 
 
-  public java.sql.Timestamp getJoinShoppingCartTime() {
+  public int getJoinShoppingCartTime() {
     return joinShoppingCartTime;
   }
 
-  public void setJoinShoppingCartTime(java.sql.Timestamp joinShoppingCartTime) {
+  public void setJoinShoppingCartTime(int joinShoppingCartTime) {
     this.joinShoppingCartTime = joinShoppingCartTime;
   }
 
 
-  public java.sql.Timestamp getUpdateTime() {
+  public int getUpdateTime() {
     return updateTime;
   }
 
-  public void setUpdateTime(java.sql.Timestamp updateTime) {
+  public void setUpdateTime(int updateTime) {
     this.updateTime = updateTime;
   }
 
