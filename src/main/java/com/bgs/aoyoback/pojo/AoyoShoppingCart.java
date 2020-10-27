@@ -1,4 +1,4 @@
-package com.aoyoback.pojo;
+package com.bgs.aoyoback.pojo;
 
 
 public class AoyoShoppingCart {
