@@ -4,6 +4,6 @@ import com.bgs.aoyoback.service.ShoppingCartSerivce;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ShoppingCartSerivceImpl implements ShoppingCartSerivce {
+public class ShoppingCartServiceImpl implements ShoppingCartSerivce {
 
 }
