@@ -4,11 +4,13 @@ import lombok.Data;
 
 @Data
 public class AoyoUser {
-    Integer id;
+    Integer aoyoId;
     String aoyoName;
     Integer aoyoSex;
     String aoyoAge;
     String aoyoPassword;
     String apyoPhone;
+    String aoyoNikeName;
+    String aoyoBirthday;
 
 }
