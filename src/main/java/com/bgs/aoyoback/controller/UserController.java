@@ -28,13 +28,5 @@ public class UserController {
         return user;
     }
 
-    //退出
-    /*@ResponseBody
-    @RequestMapping("/editlogin")
-    public String editlogin(HttpSession session){
-        session.removeAttribute("user");
-        session.invalidate();
-        return "";
 
-    }*/
 }
