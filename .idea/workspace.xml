@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9961b7b-f651-4f7f-b9fb-39f6ef9ee9da" name="Default Changelist" comment="gouwuche">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapping/ScMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoyoback.iml" beforeDir="false" afterPath="$PROJECT_DIR$/aoyoback.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/controller/ShoppingCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/dao/ScMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/dao/ScMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoShoppingCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/impl/ScServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/impl/ScServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/AoyobackApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/AoyobackApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/bgs/aoyoback/AoyobackApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/bgs/aoyoback/AoyobackApplicationTests.class" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,15 +55,10 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="F:\mavenJar" />
-        <option name="mavenHome" value="f:/study/apache-maven-3.5.4" />
-        <option name="userSettingsFile" value="F:\study\apache-maven-3.5.4\conf\settings.xml" />
+        <option name="localRepository" value="D:\material\maven-repo" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../material/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\material\apache-maven-3.3.9\conf\settings.xml" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1jPIXgoYm8jCYfTMLmOvh9Rr2sR" />
@@ -89,7 +67,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -116,7 +93,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -129,18 +106,6 @@
       <recent name="com.bgs.aoyoback.service" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="AoyobackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="aoyoback" />
@@ -149,21 +114,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@bdaf3539" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </treeState>
-      </serviceView>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\dell\AppData\Roaming\Subversion</configuration>
@@ -184,6 +134,7 @@
       <workItem from="1603763384139" duration="6782000" />
       <workItem from="1603799593355" duration="1465000" />
       <workItem from="1603844814589" duration="10521000" />
+      <workItem from="1603865482939" duration="224000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1603710960844</created>
@@ -217,20 +168,19 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -261,10 +211,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="264" y="9" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603783625619" />
-    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1603784165518">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="686" y="218" key="FileChooserDialogImpl" timestamp="1603865662648">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603784165518" />
+    <state x="686" y="218" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1603865662648" />
     <state x="640" y="308" width="273" height="207" key="Github.ShareDialog" timestamp="1603710831509">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -305,10 +256,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="366" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603781527312" />
-    <state x="272" y="58" key="SettingsEditor" timestamp="1603763595287">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="340" y="74" key="SettingsEditor" timestamp="1603865688869">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="272" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603763595287" />
+    <state x="340" y="74" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1603865688869" />
     <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1603710978354">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -317,6 +269,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="461" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1603763382015" />
+    <state x="754" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603865529601">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="754" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603865529601" />
   </component>
   <component name="masterDetails">
     <states>
