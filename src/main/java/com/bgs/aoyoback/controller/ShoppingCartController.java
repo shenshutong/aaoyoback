@@ -16,7 +16,7 @@ public class ShoppingCartController {
     private ScService scService;
     @RequestMapping("/queryShoppingCart")
     @ResponseBody
-    public List<AoyoShoppingCart> queryShoppingCart(int id){
+    public List<AoyoShoppingCart> queryShoppingCart(Integer id){
         List<AoyoShoppingCart> list=scService.queryShoppingCart(id);
         return list;
     }
