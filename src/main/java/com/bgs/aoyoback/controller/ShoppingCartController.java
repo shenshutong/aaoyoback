@@ -1,7 +1,7 @@
 package com.bgs.aoyoback.controller;
 
 import com.bgs.aoyoback.pojo.AoyoShoppingCart;
-import com.bgs.aoyoback.service.ShoppingCartSerivce;
+import com.bgs.aoyoback.service.ScService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,11 +13,11 @@ import java.util.List;
 @RequestMapping("scc")
 public class ShoppingCartController {
     @Autowired
-    private ShoppingCartSerivce scService;
-  /*  @RequestMapping("queryAll")
+    private ScService scService;
+    @RequestMapping("/queryShoppingCart")
     @ResponseBody
-    public List<AoyoShoppingCart> queryAll(int id){
-        List<AoyoShoppingCart> list=scService.queryAll(id);
+    public List<AoyoShoppingCart> queryShoppingCart(int id){
+        List<AoyoShoppingCart> list=scService.queryShoppingCart(id);
         return list;
-    }*/
+    }
 }
