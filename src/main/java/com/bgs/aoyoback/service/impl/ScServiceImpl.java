@@ -15,6 +15,10 @@ public class ScServiceImpl implements ScService {
 
     @Override
     public List<AoyoShoppingCart> queryShoppingCart(int id) {
-        return null;
+        List<AoyoShoppingCart> list=scMapper.queryShoppingCart(id);
+        for (AoyoShoppingCart ao:list){
+            System.out.println(ao);
+        }
+        return list;
     }
 }

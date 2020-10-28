@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9961b7b-f651-4f7f-b9fb-39f6ef9ee9da" name="Default Changelist" comment="gouwuche">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/controller/ShoppingCartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/dao/ScMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoShoppingCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/ScService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/impl/ScServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapping/ScMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoyoback.iml" beforeDir="false" afterPath="$PROJECT_DIR$/aoyoback.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/controller/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/dao/ScMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/dao/ScMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/impl/ScServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/impl/ScServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
@@ -106,7 +103,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603716018982" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mapping" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -118,10 +115,12 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\studyLibrary\2011aoyo\aaoyoback\src\main\resources\mapping" />
       <recent name="E:\workspace\18063\aoyoback\src\main\resources\mapping" />
       <recent name="E:\workspace\18063\aoyoback\src\main\resources\static" />
     </key>
@@ -184,7 +183,7 @@
       <workItem from="1603757815631" duration="1979000" />
       <workItem from="1603763384139" duration="6782000" />
       <workItem from="1603799593355" duration="1465000" />
-      <workItem from="1603844814589" duration="2114000" />
+      <workItem from="1603844814589" duration="10521000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1603710960844</created>
@@ -207,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603783631078</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="gouwuche">
+      <created>1603847852665</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603847852665</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +237,8 @@
     <MESSAGE value="1" />
     <MESSAGE value="2" />
     <MESSAGE value="登录" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录" />
+    <MESSAGE value="gouwuche" />
+    <option name="LAST_COMMIT_MESSAGE" value="gouwuche" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="74" key="#Inspections" timestamp="1603780817486">

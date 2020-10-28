@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.bgs.aoyoback.mapper.UserMapper">
-
+<mapper namespace="com.bgs.aoyoback.dao.UserMapper">
     <!--AoyoUser userlogin(@Param("phone") String phone, @Param("password")String password);-->
     <select id="userlogin" resultType="AoyoUser">
       select * from aoyo_user where aoyo_phone=#{phone} and aoyo_password=#{password}
     </select>
-
-
 </mapper>

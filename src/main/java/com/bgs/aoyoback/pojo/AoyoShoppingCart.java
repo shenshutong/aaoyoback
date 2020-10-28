@@ -1,8 +1,11 @@
 package com.bgs.aoyoback.pojo;
 
 
-import java.util.Date;
+import lombok.Data;
+import lombok.ToString;
 
+import java.util.Date;
+@ToString
 public class AoyoShoppingCart {
 
   private int shoppingCartId;
@@ -15,7 +18,24 @@ public class AoyoShoppingCart {
   private Date updateTime;
   private int enabledStatic;
   private int deleteFlag;
+  private String cdname;
+  private String grname;
 
+  public String getCdname() {
+    return cdname;
+  }
+
+  public void setCdname(String cdname) {
+    this.cdname = cdname;
+  }
+
+  public String getGrname() {
+    return grname;
+  }
+
+  public void setGrname(String grname) {
+    this.grname = grname;
+  }
 
   public int getShoppingCartId() {
     return shoppingCartId;
