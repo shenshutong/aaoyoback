@@ -5,4 +5,7 @@
 	<select id="selectIndexImage" resultType="com.bgs.aoyoback.pojo.AoyoCommodityImg">
 			select * from aoyo_commodity_img
 	</select>
+	<select id="selectIndexPlatformImage" resultType="aoyoPlatformImage">
+		select * from aoyo_platform_image
+	</select>
 </mapper>
