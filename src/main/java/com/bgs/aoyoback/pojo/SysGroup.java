@@ -3,6 +3,8 @@ package com.bgs.aoyoback.pojo;
 import lombok.Data;
 import lombok.ToString;
 
+import java.util.List;
+
 @Data
 @ToString
 public class SysGroup {
@@ -55,7 +57,12 @@ public class SysGroup {
   private double groupIncomeRatio;
   private long addressId;
 
-  private String groupaddressname;//地址名称
+  private SysGroupAddress SysGroupAddress;//地址
 
+  private String groupAddressDetails;
+
+  private List<AoyoGroupComment> AoyoGroupComment;
+  private Integer pingfen;//评分
+  private Integer zongdingdan;//总订单
 
 }
