@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bgs.aoyoback.dao.ShopMapper">
+
+    <!--List<SysGroup> getStoreList();-->
+    <select id="getStoreList" resultType="SysGroup">
+    SELECT
+	sg.*,sga.group_address_details as groupaddressname
+FROM
+	sys_group sg
+	LEFT JOIN sys_group_address sga ON sg.GROUP_ADDRESS = sga.group_address_id
+    </select>
+
+
+</mapper>
