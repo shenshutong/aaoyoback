@@ -2,8 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.bgs.aoyoback.dao.ScMapper">
-	<resultMap id="gwc" type="GwcUtils">
-		<collection property="shoppList" ofType="AoyoShoppingCart">
+	<resultMap id="gwc" type="AoyoShoppingCart">
 			<id column="shopping_cart_id" property="shopping_cart_id"></id>
 			<result column="custom_id" property="custom_id"></result>
 			<result column="commodity_id" property="commodity_id"></result>
@@ -14,7 +13,6 @@
 			<result column="update_time" property="update_time"></result>
 			<result column="enabled_static" property="enabled_static"></result>
 			<result column="delete_flag" property="delete_flag"></result>
-		</collection>
 		<collection property="commoditys" ofType="AoyoCommodity">
 			<id column="commodity_id" property="commodity_id"></id>
 			<result column="commodity_number" property="commodity_number"></result>
@@ -49,8 +47,8 @@
 	<select id="queryShoppingCart" resultMap="gwc">
     SELECT
 	sc.*,
-	ac.*
-	gr.*
+	ac.*,
+	gr.group_name
 	FROM
 	aoyo_shopping_cart sc
 	LEFT JOIN aoyo_commodity ac ON sc.commodity_id = ac.commodity_id

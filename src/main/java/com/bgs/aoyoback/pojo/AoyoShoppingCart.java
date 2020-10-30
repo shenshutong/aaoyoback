@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.ToString;
 
 import java.util.Date;
+import java.util.List;
 
 @Data
 @ToString
@@ -19,5 +20,7 @@ public class AoyoShoppingCart {
   private Date update_time;
   private int enabled_static;
   private int delete_flag;
-
+  private String group_name;
+  private List<AoyoCommodity> commoditys;
+  private List<AoyoCommodityImg> imgs;
 }
