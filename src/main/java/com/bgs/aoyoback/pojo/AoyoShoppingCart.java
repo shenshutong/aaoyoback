@@ -1,22 +1,23 @@
 package com.bgs.aoyoback.pojo;
 
 import lombok.Data;
+import lombok.ToString;
 
 import java.util.Date;
 
 @Data
+@ToString
 public class AoyoShoppingCart {
 
-  private int shoppingCartId;
-  private int customId;
-  private int commodityId;
-  private int groupId;
-  private int joinShoppingCartCount;
-  private double joinShoppingCartPrice;
-  private Date joinShoppingCartTime;
-  private Date updateTime;
-  private int enabledStatic;
-  private int deleteFlag;
-  private String cdname;
-  private String grname;
+  private int shopping_cart_id;
+  private int custom_id;
+  private int commodity_id;
+  private int group_id;
+  private int join_shopping_cart_count;
+  private double join_shopping_cart_price;
+  private Date join_shopping_cart_time;
+  private Date update_time;
+  private int enabled_static;
+  private int delete_flag;
+
 }
