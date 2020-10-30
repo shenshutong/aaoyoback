@@ -35,4 +35,11 @@ public class ShopController {
         }
         return list;
     }
+
+    @RequestMapping("queryGroupDetail")
+    @ResponseBody
+    public SysGroup queryGroupDetail(Integer groupId){
+        SysGroup sysGroup=ss.queryGroupDetail(groupId);
+        return sysGroup;
+    }
 }

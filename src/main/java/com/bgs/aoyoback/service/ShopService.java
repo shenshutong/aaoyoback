@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface ShopService {
     List<SysGroup> getStoreList();
+
+    SysGroup queryGroupDetail(Integer groupId);
 }

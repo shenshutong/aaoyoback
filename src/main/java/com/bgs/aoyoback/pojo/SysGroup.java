@@ -2,6 +2,7 @@ package com.bgs.aoyoback.pojo;
 
 import lombok.Data;
 import lombok.ToString;
+import org.apache.poi.ss.formula.functions.T;
 
 import java.util.List;
 
@@ -34,7 +35,7 @@ public class SysGroup {
   private String groupLeaderAccount;
   private String groupIcon;
   private long groupSaleId;
-  private String groupImg;
+  private String groupImg;//图片
   private long cardId;
   private long loginFlag;
   private long showFlag;
@@ -61,8 +62,12 @@ public class SysGroup {
 
   private String groupAddressDetails;
 
-  private List<AoyoGroupComment> AoyoGroupComment;
+  private List<AoyoGroupComment> AoyoGroupComment;//评价表
   private Integer pingfen;//评分
   private Integer zongdingdan;//总订单
+
+  private List<String> fuwuList;//服务表查询服务存储
+
+  private List jishiList;//技师表查询服务存储
 
 }

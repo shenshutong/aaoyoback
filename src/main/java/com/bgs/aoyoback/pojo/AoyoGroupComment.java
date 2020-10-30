@@ -8,7 +8,7 @@ import lombok.ToString;
 public class AoyoGroupComment {
 
   private long groupCommentId;
-  private long commodityId;
+  private long groupId;
   private long orderId;
   private long customId;
   private String groupCommentTitle;
