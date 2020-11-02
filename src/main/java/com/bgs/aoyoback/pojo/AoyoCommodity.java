@@ -1,31 +1,37 @@
 package com.bgs.aoyoback.pojo;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.ToString;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 @Data
 @ToString
 public class AoyoCommodity {
 
-  private int commodity_id;
-  private String commodity_number;
-  private String commodity_name;
-  private int brand_id;
-  private int type_id;
-  private int group_id;
-  private double commdity_weight;
-  private double commodity_selling_price;
-  private double commodity_cost_price;
-  private int commodity_status;
-  private Date commodity_come_out_time;
-  private String commodity_desc;
-  private Date commodity_entry;
-  private Date commodity_lastupdate_time;
-  private int commodity_sort;
-  private int delete_flag;
-  private int commodity_suit_id;
+  private Integer commodityId;
+  private String commodityNumber;
+  private String commodityName;
+  private Integer brandId;
+  private Integer typeId;
+  private Integer groupId;
+  private double commdityWeight;
+  private double commoditySellingPrice;
+  private double commodityCostPrice;
+  private Integer commodityStatus;
+  @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+  @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+  private String commodityComeOutTime;
+  private String commodityDesc;
+  private String commodityEntry;
+  @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+  @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+  private String commodityLastupdateTime;
+  private Integer commoditySort;
+  private Integer deleteFlag;
+  private Integer commoditySuitId;
 
 
 

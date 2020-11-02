@@ -8,14 +8,13 @@ import java.util.Date;
 @Data
 @ToString
 public class AoyoCommodityImg {
-
-  private int commodity_img_id;
-  private int commodity_id;
-  private String commodity_img_desc;
-  private String commodity_img_url;
-  private int commodity_img_index;
-  private int commodity_img_sort;
-  private int commodity_img_status;
-  private Date commodityImg_lastupdate_time;
-  private int delete_flag;
+  private Integer commodityImgId;
+  private Integer commodityId;
+  private String commodityImgDesc;
+  private String commodityImgUrl;
+  private Integer commodityImgIndex;
+  private Integer commodityImgSort;
+  private Integer commodityImgStatus;
+  private java.sql.Timestamp commodityImgLastupdateTime;
+  private Integer deleteFlag;
 }
