@@ -1,5 +1,6 @@
 package com.bgs.aoyoback.controller;
 
+import com.bgs.aoyoback.pojo.AoyoCommodity;
 import com.bgs.aoyoback.pojo.AoyoGroupComment;
 import com.bgs.aoyoback.pojo.SysGroup;
 import com.bgs.aoyoback.service.ShopService;
@@ -16,6 +17,7 @@ public class ShopController {
     @Autowired
     private ShopService ss;
 
+    //门店首页
     @RequestMapping("getStoreList")
     @ResponseBody
     public List<SysGroup> getStoreList(){
@@ -36,10 +38,23 @@ public class ShopController {
         return list;
     }
 
+    //门店详情
     @RequestMapping("queryGroupDetail")
     @ResponseBody
     public SysGroup queryGroupDetail(Integer groupId){
         SysGroup sysGroup=ss.queryGroupDetail(groupId);
         return sysGroup;
+    }
+
+    //门店商品
+    @RequestMapping("queryCommodityApi")
+    @ResponseBody
+    public List<AoyoCommodity> queryCommodityApi(Integer groupId){
+        System.out.println(groupId);
+        List<AoyoCommodity> list=ss.queryCommodityApi(groupId);
+        for (AoyoCommodity a:list){
+            System.out.println(a);
+        }
+        return list;
     }
 }

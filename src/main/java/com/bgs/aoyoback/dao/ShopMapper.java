@@ -1,9 +1,6 @@
 package com.bgs.aoyoback.dao;
 
-import com.bgs.aoyoback.pojo.AoyoGroupComment;
-import com.bgs.aoyoback.pojo.AoyoGroupFeaturedServices;
-import com.bgs.aoyoback.pojo.AoyoGroupTechnician;
-import com.bgs.aoyoback.pojo.SysGroup;
+import com.bgs.aoyoback.pojo.*;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -20,4 +17,6 @@ public interface ShopMapper {
     List<AoyoGroupFeaturedServices> getFuwu(@Param("groupId") Integer groupId);
 
     List<AoyoGroupTechnician> getJishi(@Param("groupId") Integer groupId);
+
+    List<AoyoCommodity> queryCommodityApi(@Param("groupId") Integer groupId);
 }
