@@ -74,4 +74,16 @@
             group_id = #{groupId}
     </select>
 
+    <!--List<AoyoCommodity> queryCommodityApi(@Param("groupId") Integer groupId);-->
+    <select id="queryCommodityApi" resultType="AoyoCommodity">
+        SELECT
+            ac.*,aci.commodity_img_url as commodityImgUrl
+        FROM
+            aoyo_commodity ac
+            LEFT JOIN aoyo_commodity_stock acs ON ac.commodity_id = acs.commodity_id
+            LEFT JOIN aoyo_commodity_img aci ON ac.commodity_id=aci.commodity_id
+        WHERE
+            acs.group_id = #{groupId}
+    </select>
+
 </mapper>
