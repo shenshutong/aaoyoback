@@ -5,10 +5,11 @@
 	<select id="querySuitDetail" resultMap="querySuitDetail">
 		SELECT
 		acs.commodity_suit_name ,
-		acs.commodity_desc,
+		acs.commodity_desc as commoditySuitDesc,
 		acs.commodity_suit_id,
 		ac.commodity_name ,
 		ac.commodity_selling_price ,
+		ac.commodity_desc,
 		ac.commodity_id,
 		aci.commodity_img_url as commodityImgUrl
 		FROM
