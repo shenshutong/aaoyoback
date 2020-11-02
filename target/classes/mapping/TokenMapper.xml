@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bgs.aoyoback.dao.TokenMapper">
+    <!-- //根据aoyouserId修改active
+    void updateActiveByUserId(Integer aoyoId);-->
+    <update id="updateActiveByUserId" parameterType="AoyoAuthToken">
+        update aoyo_auth_token set is_active=0 where aoyo_user_id=#{aoyoId} and is_active=1
+    </update>
+
+    <!--  //token存到数据库
+    void initTokenInfo(AoyoAuthToken authToken);-->
+    <insert id="initTokenInfo" parameterType="AoyoAuthToken">
+        insert into aoyo_auth_token (
+            aoyo_user_id,access_token,access_expire,token_timestamp,is_active,create_time
+        )
+        values (
+            #{authToken.AoyoUserId},#{authToken.accessToken},
+            #{authToken.accessExpire},#{authToken.tokenTimestamp},
+            #{authToken.isActive},#{authToken.createTime}
+        )
+    </insert>
+
+    <!--
+    //数据库查询accesstoken
+    AoyoAuthToken findAccessToken(String accessToken);-->
+    <select id="findAccessToken" resultType="AoyoAuthToken">
+        select access_token from aoyo_auth_token where access_token=${accessToken} and is_active=1
+    </select>
+
+    <!--  //注销accesstoken
+    void invalidateByAccessToken(String accessToken);-->
+    <update id="invalidateByAccessToken" parameterType="AoyoAuthToken">
+        update aoyo_auth_token set is_active=1,update_time=now()
+         where access_token=#{accessToken} and is_active=1
+    </update>
+
+
+</mapper>
+
