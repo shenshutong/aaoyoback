@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bgs.aoyoback.dao.CommodityMapper">
+	<select id="querySuitDetail" resultMap="querySuitDetail">
+		SELECT
+		acs.commodity_suit_name ,
+		acs.commodity_desc,
+		acs.commodity_suit_id,
+		ac.commodity_name ,
+		ac.commodity_selling_price ,
+		ac.commodity_id,
+		aci.commodity_img_url as commodityImgUrl
+		FROM
+		aoyo_commodity_suit acs
+		LEFT JOIN aoyo_commodity ac ON ac.commodity_suit_id = acs.commodity_suit_id
+		LEFT JOIN aoyo_commodity_img aci ON ac.commodity_id = aci.commodity_id
+		WHERE
+		acs.aoyo_user_id IN ( 0
+		<if test="id!=null and id!=''">
+			, #{id}
+		</if> )
+		<if test="typeId!=null and typeId!=''">
+			and acs.type_id = #{typeId}
+		</if>
+	</select>
+	<resultMap id="querySuitDetail" autoMapping="true" type="com.bgs.aoyoback.pojo.AoyoCommoditySuit">
+		<id column="commodity_suit_id" property="commoditySuitId"></id>
+		<collection property="aoyoCommoditylist" autoMapping="true" ofType="com.bgs.aoyoback.pojo.AoyoCommodity">
+			<id column="commodity_id" property="commodityId"></id>
+		</collection>
+	</resultMap>
+</mapper>

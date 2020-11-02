@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bgs.aoyoback.dao.ShopMapper">
+
+    <resultMap id="duo" type="SysGroup">
+        <id column="GROUP_ID" property="groupId" />
+        <result column="GROUP_LEVEL" property="groupLevel" />
+        <result column="GROUP_STATUS" property="groupStatus" />
+        <result column="GROUP_NAME" property="groupName" />
+        <result column="GROUP_ADDRESS" property="groupAddress" />
+        <result column="GROUP_IMG" property="groupImg" />
+
+        <result column="group_address_details" property="groupAddressDetails" />
+        <!--<collection property="SysGroupAddress" ofType="SysGroupAddress">
+            <id column="group_address_id" property="groupAddressId" />
+            <result column="group_address_details" property="groupAddressDetails" />
+        </collection>-->
+
+        <collection property="AoyoGroupComment" ofType="AoyoGroupComment">
+            <id column="group_comment_id" property="groupCommentId" />
+            <result column="group_id" property="groupId" />
+            <result column="pingfen" property="pingfen" />
+        </collection>
+        <!--<collection property="agfsm" ofType="AoyoGroupFeaturedServices">
+            <id column="group_comment_id" property="featuredServicesId" />
+            <result column="group_id" property="featuredServicesName" />
+        </collection>-->
+    </resultMap>
+
+    <!--List<SysGroup> getStoreList();-->
+    <select id="getStoreList" resultMap="duo">
+    SELECT
+        sg.*,sga.group_address_details,agc.pingfen
+    FROM
+        sys_group sg
+        LEFT JOIN sys_group_address sga ON sg.GROUP_ADDRESS = sga.group_address_id
+        LEFT JOIN aoyo_group_comment agc on sg.GROUP_ID=agc.group_id
+    where sg.GROUP_LEVEL is null
+
+    </select>
+
+    <!--SysGroup queryGroupDetail(@Param("groupId") Integer groupId);-->
+    <select id="queryGroupDetail" resultType="SysGroup">
+         SELECT sg.*,sga.group_address_details as groupAddressDetails
+         FROM sys_group sg
+         LEFT JOIN sys_group_address sga ON sg.GROUP_ADDRESS = sga.group_address_id
+         WHERE sg.GROUP_ID = #{groupId}
+    </select>
+
+    <!--List<AoyoGroupComment> getPingfen(@Param("groupId") Integer groupId);-->
+    <select id="getPingfen" resultType="AoyoGroupComment">
+        select * from aoyo_group_comment where group_id=#{groupId};
+    </select>
+
+    <!--List<AoyoGroupFeaturedServices> getFuwu(@Param("groupId") Integer groupId);-->
+    <select id="getFuwu" resultType="AoyoGroupFeaturedServices">
+        SELECT
+            *
+        FROM
+            aoyo_group_featured_services agfs
+            LEFT JOIN aoyo_group_featured_services_middle agfsm ON agfs.featured_services_id = agfsm.featured_services_id
+        WHERE
+            agfsm.group_id = #{groupId}
+    </select>
+
+    <!--List<AoyoGroupTechnician> getJishi(@Param("groupId") Integer groupId);-->
+    <select id="getJishi" resultType="AoyoGroupTechnician">
+        SELECT
+            *
+        FROM
+            aoyo_group_technician
+        WHERE
+            group_id = #{groupId}
+    </select>
+
+</mapper>
