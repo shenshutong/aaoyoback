@@ -9,6 +9,7 @@
 		ac.coupon_desc,
 		ac.coupon_amt,
 		ac.coupon_full_less,
+		ac.coupon_type_id,
 		act.type_name,
 		act.type_desc
 		FROM aoyo_coupon ac

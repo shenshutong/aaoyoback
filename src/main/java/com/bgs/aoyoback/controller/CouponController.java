@@ -18,7 +18,6 @@ public class CouponController {
     @RequestMapping("getCouponList")
     public Result getCouponList(){
         List<AoyoCoupon> couponList = couponService.getCouponList();
-        System.out.println(couponList);
         return new Result(true,200,"查询成功",couponList);
     }
 
