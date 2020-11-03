@@ -10,11 +10,14 @@
 		ac.coupon_amt,
 		ac.coupon_full_less,
 		ac.coupon_type_id,
+		ac.coupon_start_time,
+		ac.coupon_end_time,
 		act.type_name,
 		act.type_desc
 		FROM aoyo_coupon ac
 		LEFT JOIN aoyo_coupon_type act
 		ON ac.coupon_type_id = act.type_id
+		where  now() BETWEEN ac.coupon_start_time  and ac.coupon_end_time
 	</select>
 	<resultMap id="getCouponList" autoMapping="true" type="com.bgs.aoyoback.pojo.AoyoCoupon">
 		<id property="couponId" column="coupon_id"></id>

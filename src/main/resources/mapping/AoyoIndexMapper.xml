@@ -8,4 +8,7 @@
 	<select id="selectIndexPlatformImage" resultType="aoyoPlatformImage">
 		select * from aoyo_platform_image
 	</select>
+	<select id="getCommodityPanel" resultType="aoyoPanel">
+		select ap.panel_id,ap.type_id,ap.jump_path,ap.panel_name,ap.panel_url from aoyo_panel ap
+	</select>
 </mapper>
