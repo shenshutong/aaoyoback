@@ -56,6 +56,7 @@ public class UserController {
         Map<String, Object> map = new HashMap<>();
         List<AoyoPlatformImage> list = new ArrayList<>();
 
+
         AoyoPlatformImage platformImage = new AoyoPlatformImage();
         String ph = photo.getOriginalFilename();//获取上传文件名称
         String fileName = sdf.format(new Date()) + "_1";
