@@ -13,10 +13,11 @@
 		ac.coupon_start_time,
 		ac.coupon_end_time,
 		act.type_name,
-		act.type_desc
+		act.type_desc,
+		acu.aoyo_user_id
 		FROM aoyo_coupon ac
-		LEFT JOIN aoyo_coupon_type act
-		ON ac.coupon_type_id = act.type_id
+		LEFT JOIN aoyo_coupon_type act ON ac.coupon_type_id = act.type_id
+		left join aoyo_coupon_user acu on acu.aoyo_coupon_id = ac.coupon_id
 		where  now() BETWEEN ac.coupon_start_time  and ac.coupon_end_time
 	</select>
 	<resultMap id="getCouponList" autoMapping="true" type="com.bgs.aoyoback.pojo.AoyoCoupon">
@@ -24,5 +25,14 @@
 		<association property="aoyoCouponType" autoMapping="true" javaType="com.bgs.aoyoback.pojo.AoyoCouponType">
 			<id property="typeId" column="coupon_type_id"></id>
 		</association>
+		<association property="aoyoCouponUser" autoMapping="true" javaType="com.bgs.aoyoback.pojo.AoyoCouponUser">
+			<result property="aoyoCouponId" column="aoyoCouponId"></result>
+		</association>
 	</resultMap>
+	<insert id="getCoupon" parameterType="integer">
+		insert into aoyo_coupon_user (aoyo_user_id,aoyo_coupon_id) values (2,#{aoyoCouponId});
+	</insert>
+	<select id="selectCoupon" resultType="aoyoCouponUser">
+		select * from aoyo_coupon_user acu where acu.aoyo_user_id = 2 and acu.aoyo_coupon_id=#{aoyoCouponId}
+	</select>
 </mapper>

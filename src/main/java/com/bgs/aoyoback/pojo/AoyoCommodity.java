@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.ToString;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import java.util.Date;
 @Data
 @ToString
 public class AoyoCommodity {
@@ -32,7 +31,7 @@ public class AoyoCommodity {
   private Integer commoditySort;
   private Integer deleteFlag;
   private Integer commoditySuitId;
-
-
-
+  private AoyoCommodityImg aoyoCommodityImg;
+  private String activeT;
+  private String orderBy;
 }

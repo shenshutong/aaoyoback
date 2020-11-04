@@ -27,5 +27,5 @@ public class AoyoCoupon {
   private Integer couponValidSecond;
   private double couponFullLess;
   private AoyoCouponType aoyoCouponType;
-
+  private AoyoCouponUser aoyoCouponUser;
 }

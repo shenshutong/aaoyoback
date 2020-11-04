@@ -17,4 +17,12 @@ public class CouponServiceImpl implements CouponService {
     public List<AoyoCoupon> getCouponList() {
         return couponMapper.getCouponList();
     }
+
+    @Override
+    public int getCoupon(Integer id) {
+        if(couponMapper.selectCoupon(id)!=null){
+            return 0;
+        }
+        return couponMapper.getCoupon(id);
+    }
 }

@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface CouponService {
     List<AoyoCoupon> getCouponList();
+
+    int getCoupon(Integer id);
 }
