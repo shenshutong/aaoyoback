@@ -2,6 +2,7 @@ package com.bgs.aoyoback.service.impl;
 
 import com.bgs.aoyoback.dao.AoyoIndexMapper;
 import com.bgs.aoyoback.pojo.AoyoCommodityImg;
+import com.bgs.aoyoback.pojo.AoyoPanel;
 import com.bgs.aoyoback.pojo.AoyoPlatformImage;
 import com.bgs.aoyoback.service.AoyoIndexService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,5 +22,10 @@ public class AoyoIndexServiceImpl implements AoyoIndexService {
     @Override
     public List<AoyoPlatformImage> selectIndexPlatformImage() {
         return aoyoIndexMapper.selectIndexPlatformImage();
+    }
+
+    @Override
+    public List<AoyoPanel> getCommodityPanel() {
+        return aoyoIndexMapper.getCommodityPanel();
     }
 }

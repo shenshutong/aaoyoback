@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bgs.aoyoback.dao.CouponMapper">
+	<select id="getCouponList" resultMap="getCouponList">
+		SELECT
+		ac.coupon_id,
+		ac.coupon_name,
+		ac.coupon_desc,
+		ac.coupon_amt,
+		ac.coupon_full_less,
+		ac.coupon_type_id,
+		ac.coupon_start_time,
+		ac.coupon_end_time,
+		act.type_name,
+		act.type_desc
+		FROM aoyo_coupon ac
+		LEFT JOIN aoyo_coupon_type act
+		ON ac.coupon_type_id = act.type_id
+		where  now() BETWEEN ac.coupon_start_time  and ac.coupon_end_time
+	</select>
+	<resultMap id="getCouponList" autoMapping="true" type="com.bgs.aoyoback.pojo.AoyoCoupon">
+		<id property="couponId" column="coupon_id"></id>
+		<association property="aoyoCouponType" autoMapping="true" javaType="com.bgs.aoyoback.pojo.AoyoCouponType">
+			<id property="typeId" column="coupon_type_id"></id>
+		</association>
+	</resultMap>
+</mapper>
