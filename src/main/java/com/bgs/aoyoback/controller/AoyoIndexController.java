@@ -23,7 +23,9 @@ public class AoyoIndexController {
             return new Result(false,-1,"error");
         }
         return new Result(true,0,"successful",commodityImgs);
-    }@GetMapping("/getIndexPlatformImage")
+    }
+
+    @GetMapping("/getIndexPlatformImage")
     public Result getIndexPlatformImage(){
         List<AoyoPlatformImage> aoyoPlatformImages =  aoyoIndexService.selectIndexPlatformImage();
         if (aoyoPlatformImages==null){

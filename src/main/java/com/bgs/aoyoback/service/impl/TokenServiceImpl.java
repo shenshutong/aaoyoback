@@ -45,8 +45,12 @@ public class TokenServiceImpl implements TokenService {
     @Override
     @Transactional
     public AuthTokenModel verifyUserAcreateToken(String phone, String password) throws Exception {
-        AoyoUser user = userService.verifyUser(phone, password);
 
+        AoyoUser user = userService.verifyUser(phone, password);
+        System.out.println(user);
+        String juser = JSON.toJSONString(user);
+        jedis.set("user",juser);
+        //jedis.set("phone",phone);
 
         if (user != null) {
             //失效以前仍可使用
@@ -75,9 +79,9 @@ public class TokenServiceImpl implements TokenService {
             System.out.println(jsontoken);
             jedis.set("token",jsontoken);
             //设置过期时间
-            jedis.expire("user",100000);
+            jedis.expire("token",10000);
 
-            //tokenMapper.initTokenInfo(authToken);
+           // tokenMapper.initTokenInfo(authToken);
             System.out.println(authToken);
 
             AuthTokenModel authTokenModel = new AuthTokenModel(accessToken, Constant.ACCESS_TOKEN_EXPIRE);

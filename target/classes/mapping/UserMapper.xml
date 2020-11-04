@@ -21,6 +21,26 @@
       select * from aoyo_user where aoyo_phone=#{phone}
     </select>
 
+    <!-- //查询用户信息
+    List<AoyoUser> showUserInfo();-->
+    <select id="showUserInfo" resultType="AoyoUser">
+        SELECT u.*,g.aoyo_alblum_cover
+        FROM aoyo_user u, aoyo_gallery g
+        WHERE u.aoyo_id=g.aoyo_user_id AND aoyo_id=#{id}
+    </select>
+
+    <!--//修改头像
+    int uploadPhoto(AoyoPlatformImage platformImage);-->
+    <insert id="uploadPhoto" parameterType="AoyoPlatformImage">
+        insert into aoyo_platform_image (createtime,platform_image_name,platform_image_uri,aoyo_user_id)
+        SELECT NOW(),
+           #{platformImage.PlatformImageName},
+           #{platformImage.PlatformImageUri}
+            #{platformImage.AoyoUserId}
+          FROM aoyo_platform_image
+          WHERE aoyo_user_id= #{platformImage.AoyoUserId}
+    </insert>
+
 
 </mapper>
 

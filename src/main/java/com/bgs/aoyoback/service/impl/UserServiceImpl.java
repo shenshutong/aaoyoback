@@ -1,18 +1,23 @@
 package com.bgs.aoyoback.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.bgs.aoyoback.dao.UserMapper;
+import com.bgs.aoyoback.pojo.AoyoPlatformImage;
 import com.bgs.aoyoback.pojo.AoyoUser;
+import com.bgs.aoyoback.response.BaseResponse;
+import com.bgs.aoyoback.response.StatusCode;
 import com.bgs.aoyoback.service.UserService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
+import redis.clients.jedis.Jedis;
 
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
+
+    Jedis jedis = new Jedis("127.0.0.1");
     /*@Override
     public AoyoUser userlogin(String phone, String password) {
         return userMapper.userlogin(phone,password);
@@ -27,6 +32,9 @@ public class UserServiceImpl implements UserService {
         }
 
         AoyoUser user = userMapper.selectUserInfo(phone);
+        /*String juser = JSON.toJSONString(user);
+        jedis.set("user",juser);*/
+
 
         if (user==null){
             throw  new RuntimeException("当前账号未注册");
@@ -36,6 +44,25 @@ public class UserServiceImpl implements UserService {
         }
         return user;
 
+    }
+
+    //查询用户信息
+    @Override
+    public AoyoUser showUserInfo(Integer id) {
+
+
+        //从redis中取出token
+        String token = jedis.get("token");
+        //判断token是否为空
+        if (StringUtils.isBlank(token)){
+            throw new RuntimeException("未登录，请登录");
+        }
+        return userMapper.showUserInfo(id);
+    }
+
+    @Override
+    public int uploadPhoto(AoyoPlatformImage platformImage) {
+        return userMapper.uploadPhoto(platformImage);
     }
 
 

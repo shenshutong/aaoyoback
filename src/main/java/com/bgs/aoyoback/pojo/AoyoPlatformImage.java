@@ -17,4 +17,5 @@ public class AoyoPlatformImage {
   @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
   private String creatTime;
   private Integer deleteFlag;
+  private Integer aoyoUserId;
 }

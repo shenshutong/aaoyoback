@@ -19,12 +19,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import redis.clients.jedis.Jedis;
 
 @Controller
 @RequestMapping("/token")
 public class TokenController {
     @Autowired
     private TokenService tokenService;
+    Jedis jedis = new Jedis("127.0.0.1");
 
     //用户登录
     @RequestMapping("/userlogin")

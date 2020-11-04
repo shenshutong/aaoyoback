@@ -9,8 +9,11 @@ public class AoyoUser {
     Integer aoyoSex;
     String aoyoAge;
     String aoyoPassword;
-    String apyoPhone;
+    String aoyoPhone;
     String aoyoNikeName;
     String aoyoBirthday;
+    Integer aoyoPlatformImageId;
+    Integer aoyoGalleryId;
+
 
 }
