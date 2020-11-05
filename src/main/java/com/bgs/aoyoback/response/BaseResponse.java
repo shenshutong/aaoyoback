@@ -1,5 +1,6 @@
 package com.bgs.aoyoback.response;
 
+import com.bgs.aoyoback.utils.StatusCode;
 
 /**
  *统一响应数据模型
