@@ -21,9 +21,11 @@
 		<if test="id!=null and id!=''">
 			, #{id}
 		</if> )
+		and acs.type_id in (1
 		<if test="typeId!=null and typeId!=''">
-			and acs.type_id = #{typeId}
-		</if>
+			, #{typeId}
+		</if> )
+
 	</select>
 	<resultMap id="querySuitDetail" autoMapping="true" type="com.bgs.aoyoback.pojo.AoyoCommoditySuit">
 		<id column="commodity_suit_id" property="commoditySuitId"></id>
