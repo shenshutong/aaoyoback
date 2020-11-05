@@ -18,5 +18,11 @@ public interface ShopMapper {
 
     List<AoyoGroupTechnician> getJishi(@Param("groupId") Integer groupId);
 
-    List<AoyoCommodity> queryCommodityApi(@Param("groupId") Integer groupId);
+    List<AoyoCommodity> queryCommodityApi(@Param("groupId") Integer groupId,@Param("commodityId") Integer commodity_id,@Param("typeId") Integer type_id);
+
+    List<AoyoGroupCommodity> getAoyoGroupCommodity(@Param("commodityId") Integer commodity_id);
+
+    List<AoyoCommodityNorms> getAoyoCommodityNorms(@Param("commodityId") Integer commodity_id);
+
+    List<AoyoCommodityClass> queryCommodityClassByGroupId(@Param("groupId") Integer groupId);
 }

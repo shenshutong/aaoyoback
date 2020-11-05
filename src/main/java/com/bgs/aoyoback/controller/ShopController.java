@@ -1,8 +1,6 @@
 package com.bgs.aoyoback.controller;
 
-import com.bgs.aoyoback.pojo.AoyoCommodity;
-import com.bgs.aoyoback.pojo.AoyoGroupComment;
-import com.bgs.aoyoback.pojo.SysGroup;
+import com.bgs.aoyoback.pojo.*;
 import com.bgs.aoyoback.service.ShopService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -49,12 +47,27 @@ public class ShopController {
     //门店商品
     @RequestMapping("queryCommodityApi")
     @ResponseBody
-    public List<AoyoCommodity> queryCommodityApi(Integer groupId){
+    public List<AoyoCommodity> queryCommodityApi(Integer groupId,Integer commodity_id,Integer type_id){
         System.out.println(groupId);
-        List<AoyoCommodity> list=ss.queryCommodityApi(groupId);
-        for (AoyoCommodity a:list){
-            System.out.println(a);
-        }
+        System.out.println(commodity_id);
+        System.out.println(type_id);
+        List<AoyoCommodity> list=ss.queryCommodityApi(groupId,commodity_id,type_id);
+        return list;
+    }
+
+    //商品评论
+    @RequestMapping("getCommentByCommoditId")
+    @ResponseBody
+    public List<AoyoGroupCommodity> getCommentByCommoditId(Integer commoditId){
+        List<AoyoGroupCommodity> list=ss.getCommentByCommoditId(commoditId);
+        return list;
+    }
+
+    //商品筛选
+    @RequestMapping("queryCommodityClassByGroupId")
+    @ResponseBody
+    public List<AoyoCommodityClass> queryCommodityClassByGroupId(Integer groupId){
+        List<AoyoCommodityClass> list=ss.queryCommodityClassByGroupId(groupId);
         return list;
     }
 }

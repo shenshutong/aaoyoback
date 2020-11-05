@@ -55,7 +55,30 @@ public class ShopServiceImpl implements ShopService {
 
     //门店商品
     @Override
-    public List<AoyoCommodity> queryCommodityApi(Integer groupId) {
-        return sm.queryCommodityApi(groupId);
+    @Transactional
+    public List<AoyoCommodity> queryCommodityApi(Integer groupId,Integer commodity_id,Integer type_id) {
+        List<AoyoCommodity> list=sm.queryCommodityApi(groupId,commodity_id,type_id);
+        if(commodity_id!=null){
+            for (AoyoCommodity a:list){
+                List<AoyoGroupCommodity> list1=sm.getAoyoGroupCommodity(commodity_id);
+                List<AoyoCommodityNorms> list2=sm.getAoyoCommodityNorms(commodity_id);
+                a.setAoyoGroupCommodity(list1);
+                a.setAoyoCommodityNorms(list2);
+            }
+        }
+        return list;
+    }
+
+    //商品评论
+    @Override
+    public List<AoyoGroupCommodity> getCommentByCommoditId(Integer commoditId) {
+        List<AoyoGroupCommodity> list=sm.getAoyoGroupCommodity(commoditId);
+        return list;
+    }
+
+    //商品筛选
+    @Override
+    public List<AoyoCommodityClass> queryCommodityClassByGroupId(Integer groupId) {
+        return sm.queryCommodityClassByGroupId(groupId);
     }
 }
