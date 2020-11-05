@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.bgs.aoyoback.dao.AoyoIndexMapper">
 	<select id="selectIndexImage" resultType="com.bgs.aoyoback.pojo.AoyoCommodityImg">
-			select * from aoyo_commodity_img aci
+			select * from aoyo_commodity_img aci where aci.commodity_img_id &lt; 5
 	</select>
 	<select id="selectIndexPlatformImage" resultType="aoyoPlatformImage">
 		select * from aoyo_platform_image

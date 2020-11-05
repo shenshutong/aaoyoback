@@ -1,7 +1,7 @@
 package com.bgs.aoyoback.Service.impl;
 
 import com.bgs.aoyoback.Service.CarService;
-import com.bgs.aoyoback.mapper.CarMapper;
+import com.bgs.aoyoback.dao.CarMapper;
 import com.bgs.aoyoback.pojo.CarBrand;
 import com.bgs.aoyoback.pojo.CarBrandHot;
 import org.springframework.stereotype.Service;
