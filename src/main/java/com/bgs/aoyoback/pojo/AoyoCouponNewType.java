@@ -3,7 +3,7 @@ package com.bgs.aoyoback.pojo;
 import lombok.Data;
 
 @Data
-public class AoyoCouponType {
+public class AoyoCouponNewType {
 
   private Integer typeId;
   private String typeName;

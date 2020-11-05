@@ -1,11 +1,13 @@
 package com.bgs.aoyoback.service;
 
 import com.bgs.aoyoback.pojo.AoyoCoupon;
+import com.bgs.aoyoback.pojo.AoyoCouponNew;
 
 import java.util.List;
 
 public interface CouponService {
-    List<AoyoCoupon> getCouponList();
 
-    int getCoupon(Integer id);
+    int getCoupon(AoyoCoupon aoyoCoupon);
+
+    List<AoyoCouponNew> getCouponNewList();
 }

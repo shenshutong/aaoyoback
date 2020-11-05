@@ -2,37 +2,28 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.bgs.aoyoback.dao.CouponMapper">
-	<select id="getCouponList" resultMap="getCouponList">
+	<select id="getCouponNewList" resultMap="getCouponNewList">
 		SELECT
-		ac.coupon_id,
-		ac.coupon_name,
-		ac.coupon_desc,
-		ac.coupon_amt,
-		ac.coupon_full_less,
-		ac.coupon_type_id,
-		ac.coupon_start_time,
-		ac.coupon_end_time,
-		act.type_name,
-		act.type_desc,
-		acu.aoyo_user_id
-		FROM aoyo_coupon ac
-		LEFT JOIN aoyo_coupon_type act ON ac.coupon_type_id = act.type_id
-		left join aoyo_coupon_user acu on acu.aoyo_coupon_id = ac.coupon_id
-		where  now() BETWEEN ac.coupon_start_time  and ac.coupon_end_time
+		acn.*,ac.user_id
+		FROM aoyo_coupon_new acn
+		left join aoyo_coupon ac on ac.coupon_new_id = acn.coupon_new_id
+		where  now() BETWEEN acn.coupon_new_start_time  and acn.coupon_new_end_time
 	</select>
-	<resultMap id="getCouponList" autoMapping="true" type="com.bgs.aoyoback.pojo.AoyoCoupon">
-		<id property="couponId" column="coupon_id"></id>
-		<association property="aoyoCouponType" autoMapping="true" javaType="com.bgs.aoyoback.pojo.AoyoCouponType">
-			<id property="typeId" column="coupon_type_id"></id>
+	<resultMap id="getCouponNewList" autoMapping="true" type="com.bgs.aoyoback.pojo.AoyoCouponNew">
+		<id property="couponNewId" column="coupon_new_id"></id>
+		<association property="aoyoCouponNewType" autoMapping="true" javaType="com.bgs.aoyoback.pojo.AoyoCouponNewType">
+			<id property="typeId" column="type_id"></id>
 		</association>
-		<association property="aoyoCouponUser" autoMapping="true" javaType="com.bgs.aoyoback.pojo.AoyoCouponUser">
-			<result property="aoyoCouponId" column="aoyoCouponId"></result>
+		<association property="aoyoCoupon" autoMapping="true" javaType="com.bgs.aoyoback.pojo.AoyoCoupon">
+			<id property="couponId" column="coupon_id"></id>
 		</association>
 	</resultMap>
-	<insert id="getCoupon" parameterType="integer">
-		insert into aoyo_coupon_user (aoyo_user_id,aoyo_coupon_id) values (2,#{aoyoCouponId});
+	<insert id="getCoupon" parameterType="aoyoCoupon">
+		INSERT INTO aoyo_coupon
+		( user_id, coupon_new_id, coupon_creat_time )
+		VALUES (2,#{couponNewId},now());
 	</insert>
-	<select id="selectCoupon" resultType="aoyoCouponUser">
-		select * from aoyo_coupon_user acu where acu.aoyo_user_id = 2 and acu.aoyo_coupon_id=#{aoyoCouponId}
+	<select id="selectCoupon" resultType="aoyoCoupon">
+		select * from aoyo_coupon ac where ac.user_id = 2 and ac.coupon_new_id=#{aoyoCouponNewId}
 	</select>
 </mapper>
