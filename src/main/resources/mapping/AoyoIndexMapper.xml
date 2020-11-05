@@ -18,9 +18,11 @@
 		ac.commodity_selling_price ,
 		ac.commodity_desc,
 		aci.commodity_img_id,
-		aci.commodity_img_url as commodityImgUrl
+		aci.commodity_img_url as commodityImgUrl,
+		acsk.commodity_stock_number as commodityStockNumber
 		FROM aoyo_commodity ac
 		LEFT JOIN aoyo_commodity_img aci ON ac.commodity_id = aci.commodity_id
+		left join aoyo_commodity_stock acsk on acsk.commodity_id = ac.commodity_id
 		<where>
 			<if test="commodityName!=null and commodityName!=''">
 				 ac.commodity_name like concat('%',#{commodityName},'%')

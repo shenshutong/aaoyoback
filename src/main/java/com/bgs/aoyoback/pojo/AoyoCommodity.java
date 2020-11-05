@@ -38,6 +38,6 @@ public class AoyoCommodity {
 
   private List<AoyoGroupCommodity> aoyoGroupCommodity;
   private List<AoyoCommodityNorms> aoyoCommodityNorms;
-
+  private Integer commodityStockNumber;
   private String commodityImgUrl;
 }
