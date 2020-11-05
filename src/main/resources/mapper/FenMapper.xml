@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bgs.aoyoback.mapper.FenMapper">
+
+    <select id="getShopType" resultType="AoyoAppClass">
+        select * from aoyo_app_class
+    </select>
+
+    <select id="shoppList" resultType="AoyoCommodity" parameterType="int">
+        SELECT commodity_name , commodity_id
+        from aoyo_commodity,aoyo_app_class
+        WHERE aoyo_commodity.type_id = aoyo_app_class.app_class_id
+        and app_class_id = #{appClassId}
+    </select>
+</mapper>
