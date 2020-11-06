@@ -1,4 +1,4 @@
-package com.bgs.aoyoback.Controller;
+package com.bgs.aoyoback.controller;
 
 import com.bgs.aoyoback.pojo.CarBrand;
 import com.bgs.aoyoback.pojo.CarBrandHot;
