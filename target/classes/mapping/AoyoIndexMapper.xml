@@ -18,7 +18,7 @@
 		ac.commodity_selling_price ,
 		ac.commodity_desc,
 		aci.commodity_img_id,
-		aci.commodity_img_url as commodityImgUrl
+		aci.commodity_img_url as commodityImgUrl,
 		FROM aoyo_commodity ac
 		LEFT JOIN aoyo_commodity_img aci ON ac.commodity_id = aci.commodity_id
 		<where>

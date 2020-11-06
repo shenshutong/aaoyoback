@@ -11,10 +11,12 @@
 		ac.commodity_selling_price ,
 		ac.commodity_desc,
 		ac.commodity_id,
-		aci.commodity_img_url as commodityImgUrl
+		aci.commodity_img_url as commodityImgUrl,
+		acsk.commodity_stock_number as commodityStockNumber
 		FROM
 		aoyo_commodity_suit acs
 		LEFT JOIN aoyo_commodity ac ON ac.commodity_suit_id = acs.commodity_suit_id
+		left join aoyo_commodity_stock acsk on acsk.commodity_id = ac.commodity_id
 		LEFT JOIN aoyo_commodity_img aci ON ac.commodity_id = aci.commodity_id
 		WHERE
 		acs.aoyo_user_id IN ( 0
