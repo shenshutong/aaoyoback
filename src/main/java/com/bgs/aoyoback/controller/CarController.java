@@ -4,8 +4,8 @@ import com.bgs.aoyoback.pojo.CarBrand;
 import com.bgs.aoyoback.pojo.CarBrandHot;
 import com.bgs.aoyoback.response.BaseResponse;
 
-import com.bgs.aoyoback.utils.StatusCode;
 import com.bgs.aoyoback.Service.CarService;
+import com.bgs.aoyoback.response.StatusCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

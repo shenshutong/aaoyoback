@@ -1,7 +1,7 @@
 package com.bgs.aoyoback.Service.impl;
 
 import com.bgs.aoyoback.Service.CityService;
-import com.bgs.aoyoback.mapper.CityMapper;
+import com.bgs.aoyoback.dao.CityMapper;
 import com.bgs.aoyoback.pojo.AoyoCity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

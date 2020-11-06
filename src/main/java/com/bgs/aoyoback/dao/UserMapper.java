@@ -1,5 +1,7 @@
 package com.bgs.aoyoback.dao;
 
+import com.bgs.aoyoback.pojo.AoyoCoupon;
+import com.bgs.aoyoback.pojo.AoyoOrder;
 import com.bgs.aoyoback.pojo.AoyoPlatformImage;
 import com.bgs.aoyoback.pojo.AoyoUser;
 import com.bgs.aoyoback.response.BaseResponse;
@@ -19,4 +21,16 @@ public interface UserMapper {
 
     //修改头像
     int uploadPhoto(@Param("platformImage") AoyoPlatformImage platformImage);
+
+    //查看订单
+    List<AoyoOrder> showOrderList();
+
+    //展示优惠券
+    List<AoyoCoupon> showMyDiscount();
+
+    //删除订单
+    int deleteOrder(Integer orderId);
+
+    //订单详情
+    AoyoOrder showOrderDetail(Integer id);
 }

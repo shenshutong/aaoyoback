@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bgs.aoyoback.dao.CouponMapper">
+	<select id="getCouponNewList" resultMap="getCouponNewList">
+		SELECT
+		acn.*,ac.user_id
+		FROM aoyo_coupon_new acn
+		left join aoyo_coupon ac on ac.coupon_new_id = acn.coupon_new_id
+		where  now() BETWEEN acn.coupon_new_start_time  and acn.coupon_new_end_time
+	</select>
+	<resultMap id="getCouponNewList" autoMapping="true" type="com.bgs.aoyoback.pojo.AoyoCouponNew">
+		<id property="couponNewId" column="coupon_new_id"></id>
+		<association property="aoyoCouponNewType" autoMapping="true" javaType="com.bgs.aoyoback.pojo.AoyoCouponNewType">
+			<id property="typeId" column="type_id"></id>
+		</association>
+		<association property="aoyoCoupon" autoMapping="true" javaType="com.bgs.aoyoback.pojo.AoyoCoupon">
+			<id property="couponId" column="coupon_id"></id>
+		</association>
+	</resultMap>
+	<insert id="getCoupon" parameterType="aoyoCoupon">
+		INSERT INTO aoyo_coupon
+		( user_id, coupon_new_id, coupon_creat_time )
+		VALUES (2,#{couponNewId},now());
+	</insert>
+	<select id="selectCoupon" resultType="aoyoCoupon">
+		select * from aoyo_coupon ac where ac.user_id = 2 and ac.coupon_new_id=#{aoyoCouponNewId}
+	</select>
+</mapper>

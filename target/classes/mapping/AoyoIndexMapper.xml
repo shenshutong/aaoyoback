@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bgs.aoyoback.dao.AoyoIndexMapper">
+	<select id="selectIndexImage" resultType="com.bgs.aoyoback.pojo.AoyoCommodityImg">
+			select * from aoyo_commodity_img
+	</select>
+	<select id="selectIndexPlatformImage" resultType="aoyoPlatformImage">
+		select * from aoyo_platform_image
+	</select>
+	<select id="getCommodityPanel" resultType="aoyoPanel">
+		select ap.panel_id,ap.type_id,ap.jump_path,ap.panel_name,ap.panel_url from aoyo_panel ap
+	</select>
+	<select id="queryshoppList" resultMap="queryshoppList">
+		SELECT
+		ac.commodity_id,
+		ac.commodity_name ,
+		ac.commodity_selling_price ,
+		ac.commodity_desc,
+		aci.commodity_img_id,
+		aci.commodity_img_url as commodityImgUrl
+		FROM aoyo_commodity ac
+		LEFT JOIN aoyo_commodity_img aci ON ac.commodity_id = aci.commodity_id
+		<where>
+			<if test="commodityName!=null and commodityName!=''">
+				 ac.commodity_name like concat('%',#{commodityName},'%')
+			</if>
+			<if test="orderBy!=null and orderBy!=''">
+				order by ac.commodity_selling_price ${orderBy}
+			</if>
+		</where>
+	</select>
+	<resultMap id="queryshoppList" autoMapping="true" type="com.bgs.aoyoback.pojo.AoyoCommodity">
+		<id column="commodity_id" property="commodityId"></id>
+		<association property="aoyoCommodityImg" autoMapping="true" javaType="com.bgs.aoyoback.pojo.AoyoCommodityImg">
+			<id column="commodity_img_id" property="commodityImgId"></id>
+		</association>
+	</resultMap>
+</mapper>

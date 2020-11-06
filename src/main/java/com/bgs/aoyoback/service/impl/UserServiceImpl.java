@@ -2,6 +2,8 @@ package com.bgs.aoyoback.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.bgs.aoyoback.dao.UserMapper;
+import com.bgs.aoyoback.pojo.AoyoCoupon;
+import com.bgs.aoyoback.pojo.AoyoOrder;
 import com.bgs.aoyoback.pojo.AoyoPlatformImage;
 import com.bgs.aoyoback.pojo.AoyoUser;
 import com.bgs.aoyoback.response.BaseResponse;
@@ -12,16 +14,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import redis.clients.jedis.Jedis;
 
+import java.util.List;
+
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
 
     Jedis jedis = new Jedis("127.0.0.1");
-    /*@Override
-    public AoyoUser userlogin(String phone, String password) {
-        return userMapper.userlogin(phone,password);
-    }*/
+
 
     //验证手机号与密码
     @Override
@@ -63,6 +64,29 @@ public class UserServiceImpl implements UserService {
     @Override
     public int uploadPhoto(AoyoPlatformImage platformImage) {
         return userMapper.uploadPhoto(platformImage);
+    }
+
+    //订单列表
+    @Override
+    public List<AoyoOrder> showOrderList() {
+        return userMapper.showOrderList();
+    }
+
+    @Override
+    public List<AoyoCoupon> showMyDiscount() {
+        return userMapper.showMyDiscount();
+    }
+
+    //删除订单
+    @Override
+    public int deleteOrder(Integer orderId) {
+        return userMapper.deleteOrder(orderId);
+    }
+
+    //订单详情
+    @Override
+    public AoyoOrder showOrderDetail(Integer id) {
+        return userMapper.showOrderDetail(id);
     }
 
 

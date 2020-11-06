@@ -14,6 +14,7 @@ public class AoyoUser {
     String aoyoBirthday;
     Integer aoyoPlatformImageId;
     Integer aoyoGalleryId;
+    String aoyoAlblumCover;
 
 
 }

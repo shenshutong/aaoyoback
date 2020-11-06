@@ -4,9 +4,6 @@ import com.bgs.aoyoback.Service.FenService;
 
 import com.bgs.aoyoback.pojo.AoyoAppClass;
 import com.bgs.aoyoback.pojo.AoyoCommodity;
-import com.bgs.aoyoback.pojo.AoyoCommodityBrand;
-import com.bgs.aoyoback.response.BaseResponse;
-import com.bgs.aoyoback.utils.StatusCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
