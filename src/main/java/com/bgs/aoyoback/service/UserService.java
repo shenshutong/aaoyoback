@@ -29,5 +29,5 @@ public interface UserService {
     int deleteOrder(Integer orderId);
 
     //查看订单详情
-    AoyoOrder showOrderDetail(Integer id);
+    List<AoyoOrder> showOrderDetail(Integer id);
 }

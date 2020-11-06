@@ -66,7 +66,7 @@
 
     <!--//订单详情
     AoyoOrder showOrderDetail(Integer id);-->
-    <select id="showOrderDetail" resultType="AoyoOrder">
+    <select id="showOrderDetail" resultType="com.bgs.aoyoback.pojo.AoyoOrder">
         SELECT o.*,com.commodity_name,g.GROUP_NAME,img.commodity_img_url FROM aoyo_order o,aoyo_commodity com,
         sys_group g,aoyo_commodity_img img
         WHERE o.commodity_id=com.commodity_id AND g.GROUP_ID=o.group_id AND o.order_id=2

@@ -85,7 +85,7 @@ public class UserServiceImpl implements UserService {
 
     //订单详情
     @Override
-    public AoyoOrder showOrderDetail(Integer id) {
+    public List<AoyoOrder> showOrderDetail(Integer id) {
         return userMapper.showOrderDetail(id);
     }
 

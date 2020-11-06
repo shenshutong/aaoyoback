@@ -32,5 +32,5 @@ public interface UserMapper {
     int deleteOrder(Integer orderId);
 
     //订单详情
-    AoyoOrder showOrderDetail(Integer id);
+    List<AoyoOrder> showOrderDetail(Integer id);
 }

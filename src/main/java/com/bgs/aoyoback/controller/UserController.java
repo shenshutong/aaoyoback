@@ -105,8 +105,7 @@ public class UserController {
     //查看订单详情
     @RequestMapping("showOrderDetail")
     @ResponseBody
-    public AoyoOrder showOrderDetail(Integer id){
-        System.out.println(id);
+    public List<AoyoOrder> showOrderDetail(Integer id){
         return userService.showOrderDetail(id);
 
     }
