@@ -31,6 +31,7 @@ public class AoyoOrder {
   private Integer groupOrderReceiving;
   private Integer recordDateId;
   private Integer deleteFlag;
+  private Integer cancelStatus;
 
   //商店名称
   private String groupName;

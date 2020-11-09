@@ -19,6 +19,14 @@ public class AoyoCoupon {
   private Date couponCreatTime;
   private String couponStatus;
   private Integer deleteFlag;
+  private Integer couponAmt;
+  private Integer couponTypeId;
   private AoyoCouponNew aoyoCouponNew;
   private AoyoCouponNewType aoyoCouponNewType;
+
+
+  private String couponNewName;
+  private Integer couponNewSillNum;
+  private Date couponNewEndTime;
+  private String couponNewDesc;
 }

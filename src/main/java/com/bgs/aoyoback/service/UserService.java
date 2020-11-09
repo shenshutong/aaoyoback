@@ -1,9 +1,6 @@
 package com.bgs.aoyoback.service;
 
-import com.bgs.aoyoback.pojo.AoyoCoupon;
-import com.bgs.aoyoback.pojo.AoyoOrder;
-import com.bgs.aoyoback.pojo.AoyoPlatformImage;
-import com.bgs.aoyoback.pojo.AoyoUser;
+import com.bgs.aoyoback.pojo.*;
 import com.bgs.aoyoback.response.BaseResponse;
 
 import java.util.List;
@@ -30,4 +27,15 @@ public interface UserService {
 
     //查看订单详情
     List<AoyoOrder> showOrderDetail(Integer id);
+
+    //优惠券数量
+    int discountCount();
+
+    //关注商品
+    List<AoyoCommodityCollection> commodityCollection();
+    //关注商品数量
+    int collectionCount();
+
+    //取消关注
+    int deleteCollection(Integer collectionId);
 }

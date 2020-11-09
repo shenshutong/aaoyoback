@@ -41,13 +41,6 @@
           WHERE aoyo_user_id= #{platformImage.AoyoUserId}
     </insert>
 
-    <!--  //展示优惠券
-    List<AoyoCoupon> showMyDiscount();-->
-    <select id="showMyDiscount" resultType="AoyoCoupon">
-        select * from aoyo_coupon
-    </select>
-
-
 
     <!-- //查看订单
     List<AoyoOrder> showOrderList();-->
@@ -67,11 +60,50 @@
     <!--//订单详情
     AoyoOrder showOrderDetail(Integer id);-->
     <select id="showOrderDetail" resultType="com.bgs.aoyoback.pojo.AoyoOrder">
-        SELECT o.*,com.commodity_name,g.GROUP_NAME,img.commodity_img_url FROM aoyo_order o,aoyo_commodity com,
-        sys_group g,aoyo_commodity_img img
-        WHERE o.commodity_id=com.commodity_id AND g.GROUP_ID=o.group_id AND o.order_id=2
+        SELECT o.*,com.commodity_name,com.commodity_sort,com.commodity_selling_price,g.GROUP_NAME,img.commodity_img_url
+        FROM aoyo_order o,aoyo_commodity com,sys_group g,aoyo_commodity_img img
+        WHERE o.commodity_id=com.commodity_id AND g.GROUP_ID=o.group_id AND o.order_id=#{id}
         AND img.commodity_id=com.commodity_id
     </select>
+
+
+    <!--  //展示优惠券
+        List<AoyoCoupon> showMyDiscount();-->
+    <select id="showMyDiscount" resultType="AoyoCoupon">
+        SELECT c.coupon_status,c.coupon_amt,c.coupon_type_id,c.coupon_status,new.coupon_new_end_time,
+                new.coupon_new_name,new.coupon_new_sill_num,new.coupon_new_desc
+        FROM aoyo_coupon c,aoyo_coupon_new new
+        WHERE c.coupon_new_id=new.coupon_new_id
+    </select>
+
+
+    <!--//优惠券数量
+    AoyoCoupon discountCount();-->
+    <select id="discountCount" resultType="Integer">
+        SELECT COUNT(*) FROM aoyo_coupon WHERE coupon_status=1
+    </select>
+
+    <!-- //关注商品
+    List<AoyoCommodityCollection> commodityCollection();-->
+    <select id="commodityCollection" resultType="AoyoCommodityCollection">
+        SELECT com.commodity_name,com.commodity_selling_price,com.commodity_id,
+                col.collectionCount,col.commodity_collection_id,col.is_effective,img.commodity_img_url
+        FROM aoyo_commodity_collection col,aoyo_commodity com,aoyo_commodity_img img
+        WHERE col.commodity_id=com.commodity_id AND com.commodity_id=img.commodity_id
+    </select>
+
+    <!--//关注商品数量
+    int collectionCount();-->
+    <select id="collectionCount" resultType="Integer">
+        select COUNT(*) from aoyo_commodity_collection
+    </select>
+
+    <!-- //取消关注
+    int deleteCollection(Integer collectionId);-->
+    <delete id="deleteCollection" parameterType="Integer">
+        delete from aoyo_commodity_collection where commodity_collection_id=#{collectionId}
+    </delete>
+
 
 </mapper>
 

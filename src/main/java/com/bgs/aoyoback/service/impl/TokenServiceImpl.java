@@ -1,6 +1,7 @@
 package com.bgs.aoyoback.service.impl;
 
 import com.alibaba.fastjson.JSON;
+
 import com.bgs.aoyoback.dao.TokenMapper;
 import com.bgs.aoyoback.dto.AccessTokenDto;
 import com.bgs.aoyoback.pojo.AoyoAuthToken;
@@ -18,7 +19,6 @@ import org.joda.time.DateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -52,7 +52,9 @@ public class TokenServiceImpl implements TokenService {
         jedis.set("user",juser);
         //jedis.set("phone",phone);
 
+
         if (user != null) {
+            System.out.println(user+"aaaa");
             //失效以前仍可使用
             tokenMapper.updateActiveByUserId(user.getAoyoId());
             //创建token对象
