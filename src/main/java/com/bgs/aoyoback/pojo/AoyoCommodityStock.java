@@ -11,6 +11,7 @@ public class AoyoCommodityStock {
   private Integer commodityId;
   private Integer commodityStockNumber;
   private Integer deleteFlag;
+  private Integer group_id;
 
 
 }
