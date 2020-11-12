@@ -1,6 +1,6 @@
-package com.bgs.aoyoback.Service.impl;
+package com.bgs.aoyoback.service.impl;
 
-import com.bgs.aoyoback.Service.CarService;
+import com.bgs.aoyoback.service.CarService;
 import com.bgs.aoyoback.dao.CarMapper;
 import com.bgs.aoyoback.pojo.CarBrand;
 import com.bgs.aoyoback.pojo.CarBrandHot;
@@ -16,11 +16,13 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public List<CarBrandHot> getHotCarList() {
+
         return carMapper.getHotCarList();
     }
 
     @Override
     public List<CarBrand> getCarList() {
+
         return carMapper.getCarList();
     }
 
@@ -31,6 +33,9 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public List<CarBrand> searchCarList(String name) {
+
         return carMapper.searchCarList(name);
     }
+
+
 }

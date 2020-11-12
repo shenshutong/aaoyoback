@@ -5,7 +5,7 @@
 <mapper namespace="com.bgs.aoyoback.dao.CityMapper">
 
     <select id="getCityList" resultType="AoyoCity">
-    SELECT name, pname FROM aoyo_city , aoyo_province
+    SELECT name ,pname  FROM aoyo_city,aoyo_province
     WHERE aoyo_city.province_code = aoyo_province.code
     </select>
 

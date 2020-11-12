@@ -1,6 +1,6 @@
-package com.bgs.aoyoback.Controller;
+package com.bgs.aoyoback.controller;
 
-import com.bgs.aoyoback.Service.FenService;
+import com.bgs.aoyoback.service.FenService;
 
 import com.bgs.aoyoback.pojo.AoyoAppClass;
 import com.bgs.aoyoback.pojo.AoyoCommodity;
@@ -33,4 +33,23 @@ public class FenController {
         System.out.println(list);
         return list;
     }
-}
+
+    //获取商品列表\顶部搜索框
+    @RequestMapping("shoppListUrl")
+    @ResponseBody
+    public List<AoyoCommodity> shoppListUrl(AoyoCommodity commodity){
+        List<AoyoCommodity> list = fenService.shoppListUrl(commodity);
+        return list;
+    }
+
+
+    @ResponseBody
+    @RequestMapping("searchHot")
+    public List<AoyoAppClass> searchHot() {
+        List<AoyoAppClass> list = fenService.searchHot() ;
+        return list;
+    }
+
+
+
+    }

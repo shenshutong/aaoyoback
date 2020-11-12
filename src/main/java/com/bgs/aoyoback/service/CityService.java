@@ -1,4 +1,4 @@
-package com.bgs.aoyoback.Service;
+package com.bgs.aoyoback.service;
 
 import com.bgs.aoyoback.pojo.AoyoCity;
 

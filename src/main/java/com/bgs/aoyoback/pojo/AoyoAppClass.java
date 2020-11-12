@@ -9,7 +9,7 @@ public class AoyoAppClass {
   private Integer appClassId;
   private String appClassName;
   private String appClassDesc;
-  private java.sql.Timestamp createTime;
+  private Timestamp createTime;
   private long appClassStatus;
   private long deleteFlag;
 
@@ -43,11 +43,11 @@ public class AoyoAppClass {
   }
 
 
-  public java.sql.Timestamp getCreateTime() {
+  public Timestamp getCreateTime() {
     return createTime;
   }
 
-  public void setCreateTime(java.sql.Timestamp createTime) {
+  public void setCreateTime(Timestamp createTime) {
     this.createTime = createTime;
   }
 

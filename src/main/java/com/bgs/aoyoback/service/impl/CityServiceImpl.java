@@ -1,6 +1,6 @@
-package com.bgs.aoyoback.Service.impl;
+package com.bgs.aoyoback.service.impl;
 
-import com.bgs.aoyoback.Service.CityService;
+import com.bgs.aoyoback.service.CityService;
 import com.bgs.aoyoback.dao.CityMapper;
 import com.bgs.aoyoback.pojo.AoyoCity;
 import org.springframework.beans.factory.annotation.Autowired;

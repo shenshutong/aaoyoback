@@ -14,4 +14,11 @@
         WHERE aoyo_commodity.type_id = aoyo_app_class.app_class_id
         and app_class_id = #{appClassId}
     </select>
+
+    <!--List<AppClass> searchHot();//热门搜索-->
+    <select id="searchHot" resultType="AoyoAppClass">
+        select aoyo_app_class.app_class_id,aoyo_app_class.app_class_name from aoyo_app_class
+    </select>
+
+
 </mapper>

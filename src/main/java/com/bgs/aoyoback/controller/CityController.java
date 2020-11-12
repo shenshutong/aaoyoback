@@ -1,9 +1,9 @@
 package com.bgs.aoyoback.controller;
 
-import com.bgs.aoyoback.Service.CityService;
 import com.bgs.aoyoback.pojo.AoyoCity;
 import com.bgs.aoyoback.response.BaseResponse;
 import com.bgs.aoyoback.response.StatusCode;
+import com.bgs.aoyoback.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

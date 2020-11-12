@@ -1,6 +1,6 @@
-package com.bgs.aoyoback.Service.impl;
+package com.bgs.aoyoback.service.impl;
 
-import com.bgs.aoyoback.Service.FenService;
+import com.bgs.aoyoback.service.FenService;
 import com.bgs.aoyoback.dao.FenMapper;
 import com.bgs.aoyoback.pojo.AoyoAppClass;
 import com.bgs.aoyoback.pojo.AoyoCommodity;
@@ -23,6 +23,17 @@ public class FenServiceImpl implements FenService {
     @Override
     public List<AoyoCommodity> shoppList(Integer appClassId)
     {
+
         return fenMapper.shoppList(appClassId);
+    }
+
+    @Override
+    public List<AoyoCommodity> shoppListUrl(AoyoCommodity commodity) {
+        return fenMapper.shoppListUrl(commodity);
+    }
+
+    @Override
+    public List<AoyoAppClass> searchHot() {
+        return fenMapper.searchHot();
     }
 }
