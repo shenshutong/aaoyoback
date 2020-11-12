@@ -20,4 +20,5 @@ public class AoyoShoppingCart {
   private Integer deleteFlag;
   private List<AoyoCommodity> commoditys;
   private List<AoyoCommodityImg> imgs;
+  private String groupName;
 }

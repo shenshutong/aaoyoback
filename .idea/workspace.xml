@@ -21,24 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="128cd689-f39b-4cc9-a381-45c59bf97a2a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/controller/ShoppingCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/dao/ScMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/dao/ScMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoCommodity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoCommodity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoCommodityNorms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoCommodityNorms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoShoppingCart3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/ScService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/ScService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/impl/ScServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/impl/ScServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/CarMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/CarMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/ScMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/ScMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/controller/ShoppingCartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/controller/ShoppingCartController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/dao/ScMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/dao/ScMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoCommodity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoCommodity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoCommodityNorms.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoCommodityNorms.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoShoppingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoShoppingCart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/ScService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/ScService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/impl/ScServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/impl/ScServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/CarMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/CarMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/ScMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/ScMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoShoppingCart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605144289072</updated>
-      <workItem from="1605144292756" duration="1998000" />
+      <workItem from="1605144292756" duration="3498000" />
     </task>
     <task id="LOCAL-00001" summary="合并zf">
       <created>1605144956134</created>
@@ -130,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605144956134</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="合并志德">
+      <created>1605146455504</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605146455504</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,65 +164,66 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="合并zf" />
-    <option name="LAST_COMMIT_MESSAGE" value="合并zf" />
+    <MESSAGE value="合并志德" />
+    <option name="LAST_COMMIT_MESSAGE" value="合并志德" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="99" key="#Project_Structure" timestamp="1605144932748">
+    <state x="440" y="99" key="#Project_Structure" timestamp="1605147058886">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="440" y="99" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1605144932748" />
+    <state x="440" y="99" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1605147058886" />
     <state x="552" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605146127749">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605146127749" />
-    <state x="476" y="83" key="CommitChangelistDialog2" timestamp="1605144955094">
+    <state x="476" y="83" key="CommitChangelistDialog2" timestamp="1605146454476">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="476" y="83" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605144955094" />
+    <state x="476" y="83" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605146454476" />
     <state x="740" y="265" key="FileChooserDialogImpl" timestamp="1605146182865">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="265" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1605146182865" />
-    <state width="1877" height="235" key="GridCell.Tab.0.bottom" timestamp="1605145930770">
+    <state width="1877" height="339" key="GridCell.Tab.0.bottom" timestamp="1605146327502">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="235" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605145930770" />
-    <state width="1877" height="235" key="GridCell.Tab.0.center" timestamp="1605145930769">
+    <state width="1877" height="339" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605146327502" />
+    <state width="1877" height="339" key="GridCell.Tab.0.center" timestamp="1605146327502">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="235" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605145930769" />
-    <state width="1877" height="235" key="GridCell.Tab.0.left" timestamp="1605145930769">
+    <state width="1877" height="339" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605146327502" />
+    <state width="1877" height="339" key="GridCell.Tab.0.left" timestamp="1605146327502">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="235" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605145930769" />
-    <state width="1877" height="235" key="GridCell.Tab.0.right" timestamp="1605145930769">
+    <state width="1877" height="339" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605146327502" />
+    <state width="1877" height="339" key="GridCell.Tab.0.right" timestamp="1605146327502">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="235" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605145930769" />
-    <state width="1877" height="235" key="GridCell.Tab.1.bottom" timestamp="1605145915278">
+    <state width="1877" height="339" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605146327502" />
+    <state width="1877" height="339" key="GridCell.Tab.1.bottom" timestamp="1605146327502">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="235" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605145915278" />
-    <state width="1877" height="235" key="GridCell.Tab.1.center" timestamp="1605145915278">
+    <state width="1877" height="339" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605146327502" />
+    <state width="1877" height="339" key="GridCell.Tab.1.center" timestamp="1605146327502">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="235" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605145915278" />
-    <state width="1877" height="235" key="GridCell.Tab.1.left" timestamp="1605145915278">
+    <state width="1877" height="339" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605146327502" />
+    <state width="1877" height="339" key="GridCell.Tab.1.left" timestamp="1605146327502">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="235" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605145915278" />
-    <state width="1877" height="235" key="GridCell.Tab.1.right" timestamp="1605145915278">
+    <state width="1877" height="339" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605146327502" />
+    <state width="1877" height="339" key="GridCell.Tab.1.right" timestamp="1605146327502">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="235" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605145915278" />
+    <state width="1877" height="339" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605146327502" />
     <state x="461" y="169" key="SettingsEditor" timestamp="1605144315069">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605144315069" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1605144965014">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1605146463392">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605144965014" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605146463392" />
     <state x="754" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605144447285">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
