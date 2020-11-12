@@ -11,7 +11,7 @@ public class OssProPerties implements InitializingBean {
     @Value("${aliyun.endpoint}")
     private String oss_endpoint;//服务器地址
 
-    @Value("${aliyun.bucketll}")
+    @Value("${aliyun.bucket}")
     private String oss_bucketname;//bucket名称
 
     @Value("${aliyun.dir}")
