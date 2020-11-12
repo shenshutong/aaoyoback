@@ -40,13 +40,11 @@ public class AoyoCommodity {
   private AoyoCommodityImg aoyoCommodityImg;
   private String activeT;
   private String orderBy;
-
   private List<AoyoGroupCommodity> aoyoGroupCommodity;
   private List<AoyoCommodityNorms> aoyoCommodityNorms;
-
   private String commodityImgUrl;
-
-
+  private Integer commodityStockNumber;
+  private Integer commodityCount;
 
 
 }

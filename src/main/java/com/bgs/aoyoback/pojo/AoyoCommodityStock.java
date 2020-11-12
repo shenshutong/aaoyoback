@@ -7,12 +7,10 @@ import lombok.ToString;
 @ToString
 public class AoyoCommodityStock {
 
-  private long commodityStockId;
-  private long commodityId;
-  private long groupId;
-  private String commodityStockTypeName;
-  private long commodityStockNumber;
-  private long deleteFlag;
+  private Integer commodityStockId;
+  private Integer commodityId;
+  private Integer commodityStockNumber;
+  private Integer deleteFlag;
 
 
 }
