@@ -15,7 +15,7 @@ public interface UserService {
     //查询用户信息
     AoyoUser showUserInfo(Integer id);
 
-    int uploadPhoto(AoyoPlatformImage platformImage);
+    int uploadPhoto(AoyoGallery aoyoGallery);
 
     //查看订单信息
     List<AoyoOrder> showOrderList();
@@ -38,4 +38,18 @@ public interface UserService {
 
     //取消关注
     int deleteCollection(Integer collectionId);
+
+    //收货地址
+    List<AoyoAddress> showAddressList();
+
+    //收货地址标签
+    List<AoyoAddressLabel> addressLabel();
+
+    List<AoyoProvince> showProvince();
+    List<AoyoCity> showCitys(Integer code);
+    List<AoyoArea> showAreas(Integer code);
+    List<AoyoStreet> showStreet(Integer code);
+
+    //添加收货地址
+    int initAddress(AoyoAddress aoyoAddress);
 }

@@ -81,13 +81,14 @@ public class TokenController {
     }
 
 
-    @RequestMapping("/phonelogin")
+    @RequestMapping("/getCode")
     @ResponseBody
-    public void phonelogin(String phone) throws ClientException {
+    public void getCode(String phone) throws ClientException {
         AliyunSmsUtil aliyunSmsUtil = new AliyunSmsUtil();
         aliyunSmsUtil.setNewcode();
         String code = Integer.toString(aliyunSmsUtil.getNewcode());
         SendSmsResponse sendSms = aliyunSmsUtil.sendSms(phone,code);
+        jedis.set("code",code);
         //SendSmsResponse sendSms = sendSms(phone, code);//填写你需要
         System.out.println("短信接口返回的数据----------------");
         System.out.println("Code=" + sendSms.getCode());
@@ -95,6 +96,17 @@ public class TokenController {
         System.out.println("RequestId=" + sendSms.getRequestId());
         System.out.println("BizId=" + sendSms.getBizId());
 
+    }
+
+    @ResponseBody
+    @RequestMapping("/phoneLogin")
+    public BaseResponse phoneLogin(String code,String mobile){
+
+         String scode = jedis.get("code");
+         if (scode.equals(code)){
+             return new BaseResponse(200,"登录成功");
+         }
+        return new BaseResponse(-1,"登录失败");
     }
 
 

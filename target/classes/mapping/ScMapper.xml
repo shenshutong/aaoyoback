@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bgs.aoyoback.dao.ScMapper">
+	<resultMap id="gwc" type="AoyoShoppingCart">
+			<id column="shopping_cart_id" property="shopping_cart_id"></id>
+			<result column="custom_id" property="custom_id"></result>
+			<result column="commodity_id" property="commodity_id"></result>
+			<result column="group_id" property="group_id"></result>
+			<result column="join_shopping_cart_count" property="join_shopping_cart_count"></result>
+			<result column="join_shopping_cart_price" property="join_shopping_cart_price"></result>
+			<result column="join_shopping_cart_time" property="join_shopping_cart_time"></result>
+			<result column="update_time" property="update_time"></result>
+			<result column="enabled_static" property="enabled_static"></result>
+			<result column="delete_flag" property="delete_flag"></result>
+		<collection property="commoditys" ofType="AoyoCommodity">
+			<id column="commodity_id" property="commodity_id"></id>
+			<result column="commodity_number" property="commodity_number"></result>
+			<result column="commodity_name" property="commodity_name"></result>
+			<result column="brand_id" property="brand_id"></result>
+			<result column="type_id" property="type_id"></result>
+			<result column="group_id" property="group_id"></result>
+			<result column="commdity_weight" property="commdity_weight"></result>
+			<result column="commodity_selling_price" property="commodity_selling_price"></result>
+			<result column="commodity_cost_price" property="commodity_cost_price"></result>
+			<result column="commodity_status" property="commodity_status"></result>
+			<result column="commodity_come_out_time" property="commodity_come_out_time"></result>
+			<result column="commodity_desc" property="commodity_desc"></result>
+			<result column="commodity_entry" property="commodity_entry"></result>
+			<result column="commodity_lastupdate_time" property="commodity_lastupdate_time"></result>
+			<result column="commodity_sort" property="commodity_sort"></result>
+			<result column="delete_flag" property="delete_flag"></result>
+			<result column="commodity_suit_id" property="commodity_suit_id"></result>
+		</collection>
+		<collection property="imgs" ofType="AoyoCommodityImg">
+			<id column="commodity_img_id" property="commodity_img_id"></id>
+			<result column="commodity_id" property="commodity_id"></result>
+			<result column="commodity_img_desc" property="commodity_img_desc"></result>
+			<result column="commodity_img_url" property="commodity_img_url"></result>
+			<result column="commodity_img_index" property="commodity_img_index"></result>
+			<result column="commodity_img_sort" property="commodity_img_sort"></result>
+			<result column="commodity_img_status" property="commodity_img_status"></result>
+			<result column="commodityImg_lastupdate_time" property="commodityImg_lastupdate_time"></result>
+			<result column="delete_flag" property="delete_flag"></result>
+		</collection>
+	</resultMap>
+	<select id="queryShoppingCart" resultMap="gwc">
+    SELECT
+	sc.*,
+	ac.*,
+	gr.group_name
+	FROM
+	aoyo_shopping_cart sc
+	LEFT JOIN aoyo_commodity ac ON sc.commodity_id = ac.commodity_id
+	LEFT JOIN sys_group gr on sc.group_id=gr.group_id
+	where sc.custom_id=#{id}
+    </select>
+</mapper>

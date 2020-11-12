@@ -52,16 +52,17 @@ public class UserServiceImpl implements UserService {
 
         //从redis中取出token
         String token = jedis.get("token");
+        String scode = jedis.get("code");
         //判断token是否为空
-        if (StringUtils.isBlank(token)){
+        if (StringUtils.isBlank(token) && StringUtils.isBlank(scode)){
             throw new RuntimeException("未登录，请登录");
         }
         return userMapper.showUserInfo(id);
     }
 
     @Override
-    public int uploadPhoto(AoyoPlatformImage platformImage) {
-        return userMapper.uploadPhoto(platformImage);
+    public int uploadPhoto(AoyoGallery aoyoGallery) {
+        return userMapper.uploadPhoto(aoyoGallery);
     }
 
     //订单列表
@@ -108,6 +109,41 @@ public class UserServiceImpl implements UserService {
     @Override
     public int deleteCollection(Integer collectionId) {
         return userMapper.deleteCollection(collectionId);
+    }
+
+    //收货地址
+    @Override
+    public List<AoyoAddress> showAddressList() {
+        return userMapper.showAddressList();
+    }
+
+    //收货地址标签
+    @Override
+    public List<AoyoAddressLabel> addressLabel() {
+        return userMapper.addressLabel();
+    }
+
+    @Override
+    public   List<AoyoProvince> showProvince() {
+        return userMapper.showProvince();
+    }
+    @Override
+    public List<AoyoCity> showCitys(Integer code) {
+        return userMapper.showCitys(code);
+    }
+    @Override
+    public List<AoyoArea> showAreas(Integer code) {
+        return userMapper.showAreas(code);
+    }
+    @Override
+    public List<AoyoStreet> showStreet(Integer code) {
+        return userMapper.showStreet(code);
+    }
+
+    //添加收货地址
+    @Override
+    public int initAddress(AoyoAddress aoyoAddress) {
+        return userMapper.initAddress(aoyoAddress);
     }
 
 

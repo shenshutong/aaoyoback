@@ -31,14 +31,17 @@
 
     <!--//修改头像
     int uploadPhoto(AoyoPlatformImage platformImage);-->
-    <insert id="uploadPhoto" parameterType="AoyoPlatformImage">
-        insert into aoyo_platform_image (createtime,platform_image_name,platform_image_uri,aoyo_user_id)
-        SELECT NOW(),
-           #{platformImage.PlatformImageName},
-           #{platformImage.PlatformImageUri}
-            #{platformImage.AoyoUserId}
-          FROM aoyo_platform_image
-          WHERE aoyo_user_id= #{platformImage.AoyoUserId}
+    <insert id="uploadPhoto" parameterType="AoyoGallery">
+       insert into aoyo_gallery
+        (createtime,aoyo_alblum_info,aoyo_alblum_cover,aoyo_user_id)
+        values (NOW(),
+           #{aoyoGallery.aoyoAlblumInfo},
+           #{aoyoGallery.aoyoAlblumCover},
+            #{aoyoGallery.aoyoUserId})
+        on DUPLICATE KEY UPDATE
+        aoyo_alblum_info=#{aoyoGallery.aoyoAlblumInfo},
+        aoyo_alblum_cover= #{aoyoGallery.aoyoAlblumCover},
+        aoyo_user_id=#{aoyoGallery.aoyoUserId}
     </insert>
 
 
@@ -104,6 +107,46 @@
         delete from aoyo_commodity_collection where commodity_collection_id=#{collectionId}
     </delete>
 
+    <!--//收货地址
+    List<AoyoAddress> showAddressList();-->
+    <select id="showAddressList" resultType="AoyoAddress">
+       SELECT a.consignee_name,a.telephone,a.address_id,a.address_details,l.label_name,a.default_address,
+        p.pname,ci.`name` cityname,area.`name` areaname,str.`name` streetsname
+        FROM aoyo_address a,aoyo_address_label l,
+        aoyo_province p, aoyo_city ci, aoyo_area area,aoyo_street str
+        WHERE a.address_label_id=l.label_id AND a.province_id=p.`code`
+        AND a.city_id=ci.`code` AND a.area_id=area.`code` AND a.street_id=str.`code`
+    </select>
+    
+    <!--//收货地址标签
+    List<AoyoAddressLabel> addressLabel();-->
+    <select id="addressLabel" resultType="AoyoAddressLabel">
+        select * from aoyo_address_label;
+    </select>
+
+    <select id="showProvince" resultType="AoyoProvince">
+        select * from aoyo_province
+    </select>
+    <select id="showCitys" resultType="AoyoCity">
+        select * from aoyo_city where province_code=#{code}
+    </select>
+    <select id="showAreas" resultType="AoyoArea">
+        select * from aoyo_area where city_code=#{code}
+    </select>
+    <select id="showStreet" resultType="AoyoStreet">
+        select * from aoyo_street where area_code=#{code}
+    </select>
+
+
+    <!--//添加收货地址
+    int initAddress(AoyoAddress aoyoAddress);-->
+    <insert id="initAddress">
+        insert into aoyo_address
+        (consignee_name,telephone,address_label_id,province_id,city_id,area_id,
+        street_id,address_details,default_address)
+        values
+        (#{consigneeName},#{telephone},#{addressLabelId},#{provinceId},#{cityId},#{areaId},#{streetId},#{addressDetails},#{defaultAddress})
+    </insert>
 
 </mapper>
 

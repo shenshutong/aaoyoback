@@ -17,7 +17,7 @@ public interface UserMapper {
     AoyoUser showUserInfo(Integer id);
 
     //修改头像
-    int uploadPhoto(@Param("platformImage") AoyoPlatformImage platformImage);
+    int uploadPhoto(@Param("aoyoGallery") AoyoGallery aoyoGallery);
 
     //查看订单
     List<AoyoOrder> showOrderList();
@@ -42,4 +42,18 @@ public interface UserMapper {
 
     //取消关注
     int deleteCollection(Integer collectionId);
+
+    //收货地址
+    List<AoyoAddress> showAddressList();
+
+    //收货地址标签
+    List<AoyoAddressLabel> addressLabel();
+
+    List<AoyoProvince> showProvince();
+    List<AoyoCity> showCitys(Integer code);
+    List<AoyoArea> showAreas(Integer code);
+    List<AoyoStreet> showStreet(Integer code);
+
+    //添加收货地址
+    int initAddress(AoyoAddress aoyoAddress);
 }
