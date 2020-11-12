@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import redis.clients.jedis.Jedis;
 
 import java.util.List;
 
@@ -14,6 +15,8 @@ import java.util.List;
 public class ShopController {
     @Autowired
     private ShopService ss;
+
+    Jedis jedis = new Jedis("127.0.0.1");
 
     //门店首页
     @RequestMapping("getStoreList")
@@ -69,5 +72,13 @@ public class ShopController {
     public List<AoyoCommodityClass> queryCommodityClassByGroupId(Integer groupId){
         List<AoyoCommodityClass> list=ss.queryCommodityClassByGroupId(groupId);
         return list;
+    }
+
+    @RequestMapping("addShoppingCar")
+    @ResponseBody
+    public boolean addShoppingCar(Integer commodityId){
+        System.out.println("addShoppingCar--------------"+commodityId);
+        System.out.println("addShoppingCar--------------"+jedis.get("token"));
+        return true;
     }
 }
