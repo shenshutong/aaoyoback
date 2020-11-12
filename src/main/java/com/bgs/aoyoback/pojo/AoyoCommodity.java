@@ -13,9 +13,6 @@ import java.util.List;
 @ToString
 public class AoyoCommodity {
 
-
-
-
   private Integer commodityId;
   private String commodityNumber;
   private String commodityName;
@@ -38,6 +35,7 @@ public class AoyoCommodity {
   private Integer deleteFlag;
   private Integer commoditySuitId;
   private AoyoCommodityImg aoyoCommodityImg;
+
   private String activeT;
   private String orderBy;
   private List<AoyoGroupCommodity> aoyoGroupCommodity;
@@ -45,6 +43,7 @@ public class AoyoCommodity {
   private String commodityImgUrl;
   private Integer commodityStockNumber;
   private Integer commodityCount;
-
+  private List<AoyoCommodityImg> imgs;
+  private List<AoyoCommodityNorms> norms;
 
 }

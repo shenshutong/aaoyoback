@@ -20,61 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="128cd689-f39b-4cc9-a381-45c59bf97a2a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9d5ac75-6dd5-4c42-8412-b264f3646e98.corrupted.20201111-082803.reason.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9d5ac75-6dd5-4c42-8412-b264f3646e98.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9d5ac75-6dd5-4c42-8412-b264f3646e98/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoyoback.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/controller/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/controller/CityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/controller/CityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/controller/FenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/controller/FenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/dao/CarMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/dao/CarMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/dao/CityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/dao/CityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/dao/FenMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/dao/FenMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoAppClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoAppClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/CityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/CityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/FenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/FenService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/impl/CarServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/impl/CarServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/impl/CityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/impl/CityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/impl/FenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/impl/FenServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/controller/CarController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/controller/CityController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/controller/FenController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/controller/TokenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/controller/TokenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/dao/CarMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/dao/CityMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/dao/FenMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/dao/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoAddress.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoAddress.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoAddressLabel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoAddressLabel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoAppClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoArea.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoCity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/controller/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/dao/ScMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/dao/ScMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoCommodity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoCommodity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoCommodityNorms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoCommodityNorms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo/AoyoShoppingCart3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/ScService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/ScService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/impl/ScServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/impl/ScServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/CarMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/CarMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/ScMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/ScMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/controller/ShoppingCartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/controller/ShoppingCartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/dao/ScMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/dao/ScMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoCommodity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoCommodity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoCommodityStock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoCommodityStock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoProvince.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoProvince.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoStreet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoStreet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/CarBrand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/CarBrandHot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/CarService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/CityService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/FenService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/impl/CarServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/impl/CityServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/impl/FenServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/impl/TokenServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/utils/OssProPerties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/utils/OssProPerties.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/bgs/aoyoback/AoyobackApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/bgs/aoyoback/AoyobackApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoCommodityNorms.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoCommodityNorms.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoShoppingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/pojo/AoyoShoppingCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/ScService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/ScService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/impl/ScServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bgs/aoyoback/service/impl/ScServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapping/CarMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/CarMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapping/ScMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/ScMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,23 +70,34 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/service/impl" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/bgs/aoyoback/pojo" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEAWorkSpace\aoyoback\src\main\resources\mapping" />
       <recent name="D:\IDEAWorkSpace\aoyoback\src\main\java\com\bgs\aoyoback\service\impl" />
       <recent name="D:\IDEAWorkSpace\aoyoback\src\main\java\com\bgs\aoyoback\service" />
-      <recent name="D:\IDEAWorkSpace\aoyoback\src\main\java\com\bgs\aoyoback\pojo" />
       <recent name="D:\IDEAWorkSpace\aoyoback\src\main\java\com\bgs\aoyoback\dao" />
       <recent name="D:\IDEAWorkSpace\aoyoback\src\main\java\com\bgs\aoyoback\controller" />
     </key>
@@ -146,8 +121,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605144289072</updated>
-      <workItem from="1605144292756" duration="496000" />
+      <workItem from="1605144292756" duration="1998000" />
     </task>
+    <task id="LOCAL-00001" summary="合并zf">
+      <created>1605144956134</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605144956134</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,11 +172,67 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="合并zf" />
+    <option name="LAST_COMMIT_MESSAGE" value="合并zf" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="440" y="99" key="#Project_Structure" timestamp="1605144932748">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="440" y="99" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1605144932748" />
+    <state x="552" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605146127749">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605146127749" />
+    <state x="476" y="83" key="CommitChangelistDialog2" timestamp="1605144955094">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="476" y="83" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605144955094" />
+    <state x="740" y="265" key="FileChooserDialogImpl" timestamp="1605146182865">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="265" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1605146182865" />
+    <state width="1877" height="235" key="GridCell.Tab.0.bottom" timestamp="1605145930770">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="235" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605145930770" />
+    <state width="1877" height="235" key="GridCell.Tab.0.center" timestamp="1605145930769">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="235" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605145930769" />
+    <state width="1877" height="235" key="GridCell.Tab.0.left" timestamp="1605145930769">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="235" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605145930769" />
+    <state width="1877" height="235" key="GridCell.Tab.0.right" timestamp="1605145930769">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="235" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605145930769" />
+    <state width="1877" height="235" key="GridCell.Tab.1.bottom" timestamp="1605145915278">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="235" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605145915278" />
+    <state width="1877" height="235" key="GridCell.Tab.1.center" timestamp="1605145915278">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="235" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605145915278" />
+    <state width="1877" height="235" key="GridCell.Tab.1.left" timestamp="1605145915278">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="235" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605145915278" />
+    <state width="1877" height="235" key="GridCell.Tab.1.right" timestamp="1605145915278">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="235" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605145915278" />
     <state x="461" y="169" key="SettingsEditor" timestamp="1605144315069">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605144315069" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1605144965014">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605144965014" />
     <state x="754" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605144447285">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
