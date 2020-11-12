@@ -8,6 +8,8 @@
 		acs.commodity_desc as commoditySuitDesc,
 		acs.commodity_suit_id,
 		ac.commodity_name ,
+		ac.group_id,
+		ac.commodity_count,
 		ac.commodity_selling_price ,
 		ac.commodity_desc,
 		ac.commodity_id,

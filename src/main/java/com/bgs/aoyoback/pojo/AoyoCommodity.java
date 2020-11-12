@@ -44,7 +44,7 @@ public class AoyoCommodity {
   private List<AoyoCommodityNorms> aoyoCommodityNorms;
   private String commodityImgUrl;
   private Integer commodityStockNumber;
-
+  private Integer commodityCount;
 
 
 }
